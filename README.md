@@ -5,17 +5,22 @@ My collection of CSS snippets lets you type CSS faster. Just use these on a
 Vim+UltiSnips setup and you can type *abbreviations* of declarations to expand
 to full CSS like so:
 
-     db<tab>
-     m0<tab>
-     fl<tab>
+```
+db<tab>
+m0<tab>
+fl<tab>
+```
 
 To become:
 
-     display: block;
-     margin: 0;
-     float: left;
+``` css
+display: block;
+margin: 0;
+float: left;
+```
 
-See css.snippets for a full list of snippets.
+See [css.snippets](tree/master/UltiSnips/css.snippets) for a full list of
+snippets.
 
 You'll need
 -----------
