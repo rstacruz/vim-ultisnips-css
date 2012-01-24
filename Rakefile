@@ -1,5 +1,5 @@
 desc "Make the sass/scss snippets"
-task :sass do
+task :build do
   str = File.read('UltiSnips/css.snippets')
   str.gsub!(/;/, '')
   str.gsub!(/ \{$/, '')
