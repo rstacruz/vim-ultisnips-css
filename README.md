@@ -19,8 +19,9 @@ margin: 0;
 float: left;
 ```
 
-See [css.snippets](tree/master/UltiSnips/css.snippets) for a full list of
-snippets.
+See [css.snippets][css] for a full list of snippets.
+
+[css]: https://github.com/rstacruz/vim-ultisnips-css/blob/master/UltiSnips/css.snippets
 
 You'll need
 -----------
