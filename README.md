@@ -27,7 +27,7 @@ You'll need
 -----------
 
  * [Vim](http://www.vim.org)
- * [UltiSnips](https://github.com/rygwdn/ultisnips)
+ * [UltiSnips](https://github.com/SirVer/ultisnips)
  * [Pathogen](https://github.com/tpope/vim-pathogen) or [Vundle](http://github.com/gmarik/vundle) (optional but recommended)
 
 Installation via Vundle
@@ -35,13 +35,13 @@ Installation via Vundle
 
 Add to your .vimrc:
 
-    Bundle 'rygwdn/ultisnips'
+    Bundle 'SirVer/ultisnips'
     Bundle 'rstacruz/vim-ultisnips-css'
 
 Installation via Pathogen
 -------------------------
 
-    $ git clone https://github.com/rygwdn/ultisnips.git ~/.vim/bundle/ultisnips
+    $ git clone https://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
     $ git clone https://github.com/rstacruz/vim-ultisnips-css.git ~/.vim/bundle/vim-ultisnips-css
 
 Installation via Vim without Vundle/Pathogen
