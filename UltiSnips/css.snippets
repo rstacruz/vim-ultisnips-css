@@ -408,24 +408,24 @@ snippet h "h"
 height: ${1:0};$0
 endsnippet
 
-snippet ts "ts"
-text-shadow: 1px 1px 0 ${1:rgba(black, 0.1)};$0
+snippet ts "text-shadow"
+text-shadow: ${1:1px 1px 0 rgba(black, 0.1)};$0
 endsnippet
 
-snippet wh "wh"
+snippet wh "width + height"
 width: ${1:0};
 height: ${2:0};$0
 endsnippet
 
-snippet nr "nr"
+snippet nr "no-repeat"
 no-repeat
 endsnippet
 
-snippet rx "rx"
+snippet rx "repeat-x"
 repeat-x
 endsnippet
 
-snippet ry "ry"
+snippet ry "repeat-y"
 repeat-y
 endsnippet
 
@@ -511,4 +511,24 @@ endsnippet
 
 snippet co "content: ''"
 content: '';
+endsnippet
+
+snippet us "user-select"
+@include user-select(${1:none|text|toggle|element|elements|all});
+endsnippet
+
+snippet usn "user-select: none"
+@include user-select(none);
+endsnippet
+
+snippet ust "user-select: text"
+@include user-select(text);
+endsnippet
+
+snippet usa "user-select: all"
+@include user-select(all);
+endsnippet
+
+snippet ls "letter-spacing"
+letter-spacing: ${1:0};
 endsnippet
