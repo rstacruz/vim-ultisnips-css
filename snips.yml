@@ -150,6 +150,14 @@ simple: # Snippets that will expand.
 
   zi: "z-index: {1}"
 
+  cu:   "cursor: {default|pointer|text}"
+  cut:  "cursor: text"
+  cup:  "cursor: pointer"
+  cud:  "cursor: default"
+  cuna: "cursor: not-allowed"
+  cuew: "cursor: ew-resize"
+  cuns: "cursor: ns-resize"
+
 # ----------------------------------------------------------------------------
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
