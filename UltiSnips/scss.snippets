@@ -1,5 +1,578 @@
-extends css
+snippet moa "margin: 0 auto"
+margin: 0 auto;
+endsnippet
 
-snippet + "include"
-@include 
+snippet m0a "margin: 0 auto"
+margin: 0 auto;
+endsnippet
+
+snippet mopo "margin: 0; padding: 0"
+margin: 0;
+padding: 0;
+endsnippet
+
+snippet m0p0 "margin: 0; padding: 0"
+margin: 0;
+padding: 0;
+endsnippet
+
+snippet m0 "margin: 0"
+margin: 0;
+endsnippet
+
+snippet p0 "padding: 0"
+padding: 0;
+endsnippet
+
+snippet b0 "border: 0"
+border: 0;
+endsnippet
+
+snippet w "width: ___"
+width: {0};
+endsnippet
+
+snippet h "height: ___"
+height: {0};
+endsnippet
+
+snippet mh "min-height: ___"
+min-height: {100%};
+endsnippet
+
+snippet m "margin: ___"
+margin: {0};
+endsnippet
+
+snippet mt "margin-top: ___"
+margin-top: {0};
+endsnippet
+
+snippet mb "margin-bottom: ___"
+margin-bottom: {0};
+endsnippet
+
+snippet ml "margin-left: ___"
+margin-left: {0};
+endsnippet
+
+snippet mr "margin-right: ___"
+margin-right: {0};
+endsnippet
+
+snippet p "padding: ___"
+padding: {0};
+endsnippet
+
+snippet pt "padding-top: ___"
+padding-top: {0};
+endsnippet
+
+snippet pb "padding-bottom: ___"
+padding-bottom: {0};
+endsnippet
+
+snippet pl "padding-left: ___"
+padding-left: {0};
+endsnippet
+
+snippet pr "padding-right: ___"
+padding-right: {0};
+endsnippet
+
+snippet b "border: ___"
+border: {solid 1px #333};
+endsnippet
+
+snippet bt "border-top: ___"
+border-top: {solid 1px #333};
+endsnippet
+
+snippet bb "border-bottom: ___"
+border-bottom: {solid 1px #333};
+endsnippet
+
+snippet bl "border-left: ___"
+border-left: {solid 1px #333};
+endsnippet
+
+snippet br "border-right: ___"
+border-right: {solid 1px #333};
+endsnippet
+
+snippet bt0 "border-top: 0"
+border-top: 0;
+endsnippet
+
+snippet bb0 "border-bottom: 0"
+border-bottom: 0;
+endsnippet
+
+snippet bl0 "border-left: 0"
+border-left: 0;
+endsnippet
+
+snippet br0 "border-right: 0"
+border-right: 0;
+endsnippet
+
+snippet bg "background: ___"
+background: {#fff url(image.png) no-repeat left top fixed};
+endsnippet
+
+snippet bgp "background-position: ___"
+background-position: {x y};
+endsnippet
+
+snippet bgi "background-image: ___"
+background-image: {url()};
+endsnippet
+
+snippet bgc "background-color: ___"
+background-color: {transparent};
+endsnippet
+
+snippet bgr "backgronud-repeat: ___"
+backgronud-repeat: {no-repeat};
+endsnippet
+
+snippet f "font: ___"
+font: {italic bold 1em/1.5em serif};
+endsnippet
+
+snippet font "font: ___"
+font: {italic bold 1em/1.5em serif};
+endsnippet
+
+snippet ff "font-family: ___"
+font-family: {sans-serif};
+endsnippet
+
+snippet fs "font-size: ___"
+font-size: {1em};
+endsnippet
+
+snippet lh "line-height: ___"
+line-height: {1.5};
+endsnippet
+
+snippet ls "letter-spacing: ___"
+letter-spacing: {0};
+endsnippet
+
+snippet hlh "height: ___; line-height: ___"
+height: {0px};
+line-height: {1.5};
+endsnippet
+
+snippet fn "float: none"
+float: none;
+endsnippet
+
+snippet fl "float: left"
+float: left;
+endsnippet
+
+snippet fr "float: right"
+float: right;
+endsnippet
+
+snippet cl "clear: left"
+clear: left;
+endsnippet
+
+snippet cr "clear: right"
+clear: right;
+endsnippet
+
+snippet cb "clear: both"
+clear: both;
+endsnippet
+
+snippet cd "cursor: default"
+cursor: default;
+endsnippet
+
+snippet cp "cursor: pointer"
+cursor: pointer;
+endsnippet
+
+snippet ct "cursor: text"
+cursor: text;
+endsnippet
+
+snippet d "display: ___"
+display: {none|inline|block|inline-block};
+endsnippet
+
+snippet di "display: inline"
+display: inline;
+endsnippet
+
+snippet dn "display: none"
+display: none;
+endsnippet
+
+snippet db "display: none"
+display: none;
+endsnippet
+
+snippet dib "display: inline-block"
+display: inline-block;
+endsnippet
+
+snippet fsn "font-style: normal"
+font-style: normal;
+endsnippet
+
+snippet fsi "font-style: italic"
+font-style: italic;
+endsnippet
+
+snippet italic "font-style: italic"
+font-style: italic;
+endsnippet
+
+snippet fwn "font-weight: normal"
+font-weight: normal;
+endsnippet
+
+snippet fwb "font-weight: bold"
+font-weight: bold;
+endsnippet
+
+snippet bold "font-weight: bold"
+font-weight: bold;
+endsnippet
+
+snippet fw1 "font-weight: 100"
+font-weight: 100;
+endsnippet
+
+snippet fw3 "font-weight: 300"
+font-weight: 300;
+endsnippet
+
+snippet fw5 "font-weight: 500"
+font-weight: 500;
+endsnippet
+
+snippet fw7 "font-weight: 700"
+font-weight: 700;
+endsnippet
+
+snippet fw9 "font-weight: 900"
+font-weight: 900;
+endsnippet
+
+snippet va "vertical-align: ___"
+vertical-align: {top|bottom|baseline|middle};
+endsnippet
+
+snippet vat "vertical-align: top"
+vertical-align: top;
+endsnippet
+
+snippet vab "vertical-align: bottom"
+vertical-align: bottom;
+endsnippet
+
+snippet vabl "vertical-align: baseline"
+vertical-align: baseline;
+endsnippet
+
+snippet vam "vertical-align: middle"
+vertical-align: middle;
+endsnippet
+
+snippet v "visibility: ___"
+visibility: {visible|hidden|collapse};
+endsnippet
+
+snippet vh "visibility: hidden"
+visibility: hidden;
+endsnippet
+
+snippet vv "visibility: visible"
+visibility: visible;
+endsnippet
+
+snippet bc "border-collapse: collapse"
+border-collapse: collapse;
+endsnippet
+
+snippet bcc "border-collapse: collapse"
+border-collapse: collapse;
+endsnippet
+
+snippet tt "text-transform: ___"
+text-transform: {capitalize|uppercase|lowercase};
+endsnippet
+
+snippet ttu "text-transform: uppercase"
+text-transform: uppercase;
+endsnippet
+
+snippet ttl "text-transform: lowercase"
+text-transform: lowercase;
+endsnippet
+
+snippet ttc "text-transform: capitalize"
+text-transform: capitalize;
+endsnippet
+
+snippet td "text-decoration: ___"
+text-decoration: {none|underline|strikethrough};
+endsnippet
+
+snippet tdu "text-decoration: underline"
+text-decoration: underline;
+endsnippet
+
+snippet tdn "text-decoration: none"
+text-decoration: none;
+endsnippet
+
+snippet tds "text-decoration: strikethrough"
+text-decoration: strikethrough;
+endsnippet
+
+snippet ti "text-indent: ___"
+text-indent: {0};
+endsnippet
+
+snippet ts "text-shadow: ___"
+text-shadow: {0 1px 0 #333};
+endsnippet
+
+snippet o "overflow: ___"
+overflow: {hidden|auto|scroll};
+endsnippet
+
+snippet os "overflow: scroll"
+overflow: scroll;
+endsnippet
+
+snippet oh "overflow: hidden"
+overflow: hidden;
+endsnippet
+
+snippet oa "overflow: auto"
+overflow: auto;
+endsnippet
+
+snippet oxs "overflow-x: scroll"
+overflow-x: scroll;
+endsnippet
+
+snippet oxh "overflow-x: hidden"
+overflow-x: hidden;
+endsnippet
+
+snippet oxa "overflow-x: auto"
+overflow-x: auto;
+endsnippet
+
+snippet oys "overflow-y: scroll"
+overflow-y: scroll;
+endsnippet
+
+snippet oyh "overflow-y: hidden"
+overflow-y: hidden;
+endsnippet
+
+snippet oya "overflow-y: auto"
+overflow-y: auto;
+endsnippet
+
+snippet ta "text-align: ___"
+text-align: {left|right|center|justify};
+endsnippet
+
+snippet tar "text-align: right"
+text-align: right;
+endsnippet
+
+snippet tal "text-align: left"
+text-align: left;
+endsnippet
+
+snippet tac "text-align: center"
+text-align: center;
+endsnippet
+
+snippet taj "text-align: justify"
+text-align: justify;
+endsnippet
+
+snippet poa "position: absolute"
+position: absolute;
+endsnippet
+
+snippet pof "position: fixed"
+position: fixed;
+endsnippet
+
+snippet por "position: relative"
+position: relative;
+endsnippet
+
+snippet pos "position: static"
+position: static;
+endsnippet
+
+snippet l "left: ___"
+left: {0};
+endsnippet
+
+snippet r "right: ___"
+right: {0};
+endsnippet
+
+snippet lt "left: ___; top: ___"
+left: {0};
+top: {0};
+endsnippet
+
+snippet lb "left: ___; bottom: ___"
+left: {0};
+bottom: {0};
+endsnippet
+
+snippet rt "right: ___; top: ___"
+right: {0};
+top: {0};
+endsnippet
+
+snippet rb "right: ___; bottom: ___"
+right: {0};
+bottom: {0};
+endsnippet
+
+snippet zi "z-index: ___"
+z-index: {1};
+endsnippet
+
+snippet nr "no-repeat"
+no-repeat
+endsnippet
+
+snippet rx "repeat-x"
+repeat-x
+endsnippet
+
+snippet ry "repeat-y"
+repeat-y
+endsnippet
+
+snippet ra "rgba(___, ___)"
+rgba(${1:0, 0, 0}, ${2:0.5})
+endsnippet
+
+snippet rb "rgba(black, ___)"
+rgba(black, ${1:0.2})
+endsnippet
+
+snippet rw "rgba(white, ___)"
+rgba(white, ${1:0.2})
+endsnippet
+
+snippet cf "+pie-clearfix"
++pie-clearfix
+endsnippet
+
+snippet @big "@media (min-width: 1180px) /* Big desktop */"
+@media (min-width: 1180px) { /* Big desktop */
+endsnippet
+
+snippet @desktop "@media (min-width: 768px) /* Desktop */"
+@media (min-width: 768px) { /* Desktop */
+endsnippet
+
+snippet @tablet "@media (min-width: 480px) /* Tablet & Desktop */"
+@media (min-width: 480px) { /* Tablet & Desktop */
+endsnippet
+
+snippet @mobile "@media (max-width: 480px) /* Mobile */"
+@media (max-width: 480px) { /* Mobile */
+endsnippet
+
+snippet brad "border-radius: ___"
+@include border-radius({3px});
+endsnippet
+
+snippet btrad "border-top-radius: ___"
+@include border-top-radius({3px});
+endsnippet
+
+snippet btlrad "border-top-left-radius: ___"
+@include border-top-left-radius({3px});
+endsnippet
+
+snippet btrrad "border-top-right-radius: ___"
+@include border-top-right-radius({3px});
+endsnippet
+
+snippet bbrad "border-bottom-radius: ___"
+@include border-bottom-radius({3px});
+endsnippet
+
+snippet bblrad "border-bottom-left-radius: ___"
+@include border-bottom-left-radius({3px});
+endsnippet
+
+snippet bbrrad "border-bottom-right-radius: ___"
+@include border-bottom-right-radius({3px});
+endsnippet
+
+snippet sh "box-shadow: ___"
+@include box-shadow({0 1px 2px #fff});
+endsnippet
+
+snippet bsb "box-sizing: border-box"
+@include box-sizing(border-box);
+endsnippet
+
+snippet bsp "box-sizing: padding-box"
+@include box-sizing(padding-box);
+endsnippet
+
+snippet trans "transition: ___"
+@include transition({all 300ms ease});
+endsnippet
+
+snippet transit "transition: ___"
+@include transition({all 300ms ease});
+endsnippet
+
+snippet xf "transform: ___"
+@include transform({scale(1.0)});
+endsnippet
+
+snippet xform "transform: ___"
+@include transform({scale(1.0)});
+endsnippet
+
+snippet op "opacity: ___"
+@include opacity({0});
+endsnippet
+
+snippet bgclip "background-clip: padding-box"
+@include background-clip(padding-box);
+endsnippet
+
+snippet us "user-select: ___"
+@include user-select({none|text|toggle|element|elements|all});
+endsnippet
+
+snippet usa "user-select: all"
+@include user-select(all);
+endsnippet
+
+snippet ust "user-select: text"
+@include user-select(text);
+endsnippet
+
+snippet usn "user-select: none"
+@include user-select(none);
 endsnippet

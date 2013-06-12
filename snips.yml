@@ -1,0 +1,208 @@
+simple:
+  moa: "margin: 0 auto"
+  m0a: "margin: 0 auto"
+
+  mopo: "margin: 0; padding: 0"
+  m0p0: "margin: 0; padding: 0"
+
+  m0: "margin: 0"
+  p0: "padding: 0"
+  b0: "border: 0"
+
+  w: "width: {0}"
+  h: "height: {0}"
+  mh: "min-height: {100%}"
+
+  m:  "margin: {0}"
+  mt: "margin-top: {0}"
+  mb: "margin-bottom: {0}"
+  ml: "margin-left: {0}"
+  mr: "margin-right: {0}"
+
+  p:  "padding: {0}"
+  pt: "padding-top: {0}"
+  pb: "padding-bottom: {0}"
+  pl: "padding-left: {0}"
+  pr: "padding-right: {0}"
+
+  b:  "border: {solid 1px #333}"
+  bt: "border-top: {solid 1px #333}"
+  bb: "border-bottom: {solid 1px #333}"
+  bl: "border-left: {solid 1px #333}"
+  br: "border-right: {solid 1px #333}"
+
+  bt0: "border-top: 0"
+  bb0: "border-bottom: 0"
+  bl0: "border-left: 0"
+  br0: "border-right: 0"
+
+  bg: "background: {#fff url(image.png) no-repeat left top fixed}"
+  bgp: "background-position: {x y}"
+  bgi: "background-image: {url()}"
+  bgc: "background-color: {transparent}"
+  bgr: "backgronud-repeat: {no-repeat}"
+
+  f: "font: {italic bold 1em/1.5em serif}"
+  font: "font: {italic bold 1em/1.5em serif}"
+
+  ff: "font-family: {sans-serif}"
+  fs: "font-size: {1em}"
+  lh: "line-height: {1.5}"
+  ls: "letter-spacing: {0}"
+  hlh: "height: {0px}; line-height: {1.5}"
+
+  fn: "float: none"
+  fl: "float: left"
+  fr: "float: right"
+
+  cl: "clear: left"
+  cr: "clear: right"
+  cb: "clear: both"
+
+  cd: "cursor: default"
+  cp: "cursor: pointer"
+  ct: "cursor: text"
+
+  d: "display: {none|inline|block|inline-block}"
+  di: "display: inline"
+  dn: "display: none"
+  db: "display: none"
+  dib: "display: inline-block"
+
+  fsn: "font-style: normal"
+  fsi: "font-style: italic"
+  italic: "font-style: italic"
+
+  fwn:  "font-weight: normal"
+  fwb:  "font-weight: bold"
+  bold: "font-weight: bold"
+  fw1:  "font-weight: 100"
+  fw3:  "font-weight: 300"
+  fw5:  "font-weight: 500"
+  fw7:  "font-weight: 700"
+  fw9:  "font-weight: 900"
+
+  va:  "vertical-align: {top|bottom|baseline|middle}"
+  vat:  "vertical-align: top"
+  vab:  "vertical-align: bottom"
+  vabl: "vertical-align: baseline"
+  vam:  "vertical-align: middle"
+
+  v: "visibility: {visible|hidden|collapse}"
+  vh: "visibility: hidden"
+  vv: "visibility: visible"
+
+  bc:  "border-collapse: collapse"
+  bcc: "border-collapse: collapse"
+
+  tt:  "text-transform: {capitalize|uppercase|lowercase}"
+  ttu: "text-transform: uppercase"
+  ttl: "text-transform: lowercase"
+  ttc: "text-transform: capitalize"
+
+  td:  "text-decoration: {none|underline|strikethrough}"
+  tdu: "text-decoration: underline"
+  tdn: "text-decoration: none"
+  tds: "text-decoration: strikethrough"
+
+  ti: "text-indent: {0}"
+
+  ts: "text-shadow: {0 1px 0 #333}"
+
+  o:  "overflow: {hidden|auto|scroll}"
+  os: "overflow: scroll"
+  oh: "overflow: hidden"
+  oa: "overflow: auto"
+
+  oxs: "overflow-x: scroll"
+  oxh: "overflow-x: hidden"
+  oxa: "overflow-x: auto"
+
+  oys: "overflow-y: scroll"
+  oyh: "overflow-y: hidden"
+  oya: "overflow-y: auto"
+
+  ta:  "text-align: {left|right|center|justify}"
+  tar: "text-align: right"
+  tal: "text-align: left"
+  tac: "text-align: center"
+  taj: "text-align: justify"
+
+  poa: "position: absolute"
+  pof: "position: fixed"
+  por: "position: relative"
+  pos: "position: static"
+
+  l: "left: {0}"
+  r: "right: {0}"
+  lt: "left: {0}; top: {0}"
+  lb: "left: {0}; bottom: {0}"
+  rt: "right: {0}; top: {0}"
+  rb: "right: {0}; bottom: {0}"
+
+  zi: "z-index: {1}"
+
+# ----------------------------------------------------------------------------
+# Media queries
+# Presets for media queries
+
+media:
+  "@big":     "@media (min-width: 1180px) /* Big desktop */"
+  "@desktop": "@media (min-width: 768px) /* Desktop */"
+  "@tablet":  "@media (min-width: 480px) /* Tablet & Desktop */"
+  "@mobile":  "@media (max-width: 480px) /* Mobile */"
+
+# ----------------------------------------------------------------------------
+# Expressions
+# Things that are not properties
+
+expressions:
+  nr: "no-repeat"
+  rx: "repeat-x"
+  ry: "repeat-y"
+  ra: "rgba({0, 0, 0}, {0.5})"
+
+# ----------------------------------------------------------------------------
+# Language expressions
+# Expressions that are specific to a certain language.
+
+sass-expressions:
+  rb: "rgba(black, {0.2})"
+  rw: "rgba(white, {0.2})"
+  cf: "+pie-clearfix"
+
+stylus-expressions:
+  rb: "rgba(black, {0.2})"
+  rw: "rgba(white, {0.2})"
+  cf: "clearfix()"
+
+# ----------------------------------------------------------------------------
+# CSS3 stuff
+# converts to mixins in Sass, becomes plain stuff in CSS/Stylus.
+
+css3:
+  brad:   "border-radius: {3px}"
+  btrad:  "border-top-radius: {3px}"
+  btlrad: "border-top-left-radius: {3px}"
+  btrrad: "border-top-right-radius: {3px}"
+  bbrad:  "border-bottom-radius: {3px}"
+  bblrad: "border-bottom-left-radius: {3px}"
+  bbrrad: "border-bottom-right-radius: {3px}"
+
+  sh: "box-shadow: {0 1px 2px #fff}"
+
+  bsb: "box-sizing: border-box"
+  bsp: "box-sizing: padding-box"
+
+  trans:   "transition: {all 300ms ease}"
+  transit: "transition: {all 300ms ease}"
+  xf:      "transform: {scale(1.0)}"
+  xform:   "transform: {scale(1.0)}"
+
+  op: "opacity: {0}"
+  bgclip: "background-clip: padding-box"
+
+  us:  "user-select: {none|text|toggle|element|elements|all}"
+  usa: "user-select: all"
+  ust: "user-select: text"
+  usn: "user-select: none"

@@ -19,9 +19,9 @@ margin: 0;
 float: left;
 ```
 
-See [css.snippets][css] for a full list of snippets.
+See [this list][list] for a full list of snippets.
 
-[css]: https://github.com/rstacruz/vim-ultisnips-css/blob/master/UltiSnips/css.snippets
+[list]: https://github.com/rstacruz/vim-ultisnips-css/blob/master/snips.yml
 
 You'll need
 -----------
@@ -48,6 +48,11 @@ Installation via Vim without Vundle/Pathogen
 --------------------------------------------
 
 It's possible but I won't even tell you how to. Do yourself a favor and start using Vundle or Pathogen.
+
+Contributing
+------------
+
+Just edit the YML file, don't edit the snippet files themselves.
 
 Acknowledgements
 ----------------
