@@ -100,10 +100,10 @@ simple:
   ttl: "text-transform: lowercase"
   ttc: "text-transform: capitalize"
 
-  td:  "text-decoration: {none|underline|strikethrough}"
-  tdu: "text-decoration: underline"
-  tdn: "text-decoration: none"
-  tds: "text-decoration: strikethrough"
+  td:   "text-decoration: {none|underline|strikethrough}"
+  tdu:  "text-decoration: underline"
+  tdn:  "text-decoration: none"
+  tdlt: "text-decoration: line-through"
 
   ti: "text-indent: {0}"
 
