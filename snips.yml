@@ -45,6 +45,11 @@ simple: # Snippets that will expand.
   bgc: "background-color: {transparent}"
   bgr: "backgronud-repeat: {no-repeat}"
 
+  bga:  "background-attachment: {scroll|fixed|local}"
+  bgas: "background-attachment: scroll"
+  bgaf: "background-attachment: fixed"
+  bgal: "background-attachment: local"
+
   f: "font: {italic bold 1em/1.5em serif}"
   font: "font: {italic bold 1em/1.5em serif}"
 
@@ -208,3 +213,5 @@ css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
   usa: "user-select: all"
   ust: "user-select: text"
   usn: "user-select: none"
+
+  an: "animation: {name} {300ms linear infinite}"
