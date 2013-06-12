@@ -1,4 +1,7 @@
-simple:
+# ----------------------------------------------------------------------------
+simple: # Snippets that will expand.
+# ----------------------------------------------------------------------------
+
   moa: "margin: 0 auto"
   m0a: "margin: 0 auto"
 
@@ -143,44 +146,43 @@ simple:
   zi: "z-index: {1}"
 
 # ----------------------------------------------------------------------------
-# Media queries
-# Presets for media queries
+media: # Presets for media queries
+# ----------------------------------------------------------------------------
 
-media:
   "@big":     "@media (min-width: 1180px) /* Big desktop */"
   "@desktop": "@media (min-width: 768px) /* Desktop */"
   "@tablet":  "@media (min-width: 480px) /* Tablet & Desktop */"
   "@mobile":  "@media (max-width: 480px) /* Mobile */"
 
 # ----------------------------------------------------------------------------
-# Expressions
-# Things that are not properties
+expressions: # Things that are not properties
+# ----------------------------------------------------------------------------
 
-expressions:
   nr: "no-repeat"
   rx: "repeat-x"
   ry: "repeat-y"
   ra: "rgba({0, 0, 0}, {0.5})"
 
 # ----------------------------------------------------------------------------
-# Language expressions
-# Expressions that are specific to a certain language.
+sass-expressions: # Sass-specific expressions
+# ----------------------------------------------------------------------------
 
-sass-expressions:
   rb: "rgba(black, {0.2})"
   rw: "rgba(white, {0.2})"
   cf: "+pie-clearfix"
 
-stylus-expressions:
+# ----------------------------------------------------------------------------
+stylus-expressions: # Stylus-specific expressions
+# ----------------------------------------------------------------------------
+
   rb: "rgba(black, {0.2})"
   rw: "rgba(white, {0.2})"
   cf: "clearfix()"
 
 # ----------------------------------------------------------------------------
-# CSS3 stuff
-# converts to mixins in Sass, becomes plain stuff in CSS/Stylus.
+css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
+# ----------------------------------------------------------------------------
 
-css3:
   brad:   "border-radius: {3px}"
   btrad:  "border-top-radius: {3px}"
   btlrad: "border-top-left-radius: {3px}"
