@@ -29,87 +29,87 @@ border: 0
 endsnippet
 
 snippet w "width: ___"
-width: {0}
+width: ${1:0}
 endsnippet
 
 snippet h "height: ___"
-height: {0}
+height: ${1:0}
 endsnippet
 
 snippet mh "min-height: ___"
-min-height: {100%}
+min-height: ${1:100%}
 endsnippet
 
 snippet mw "min-width: ___"
-min-width: {100%}
+min-width: ${1:100%}
 endsnippet
 
 snippet mah "max-height: ___"
-max-height: {none}
+max-height: ${1:none}
 endsnippet
 
 snippet maw "max-width: ___"
-max-width: {none}
+max-width: ${1:none}
 endsnippet
 
 snippet m "margin: ___"
-margin: {0}
+margin: ${1:0}
 endsnippet
 
 snippet mt "margin-top: ___"
-margin-top: {0}
+margin-top: ${1:0}
 endsnippet
 
 snippet mb "margin-bottom: ___"
-margin-bottom: {0}
+margin-bottom: ${1:0}
 endsnippet
 
 snippet ml "margin-left: ___"
-margin-left: {0}
+margin-left: ${1:0}
 endsnippet
 
 snippet mr "margin-right: ___"
-margin-right: {0}
+margin-right: ${1:0}
 endsnippet
 
 snippet p "padding: ___"
-padding: {0}
+padding: ${1:0}
 endsnippet
 
 snippet pt "padding-top: ___"
-padding-top: {0}
+padding-top: ${1:0}
 endsnippet
 
 snippet pb "padding-bottom: ___"
-padding-bottom: {0}
+padding-bottom: ${1:0}
 endsnippet
 
 snippet pl "padding-left: ___"
-padding-left: {0}
+padding-left: ${1:0}
 endsnippet
 
 snippet pr "padding-right: ___"
-padding-right: {0}
+padding-right: ${1:0}
 endsnippet
 
 snippet b "border: ___"
-border: {solid 1px #333}
+border: ${1:solid 1px #333}
 endsnippet
 
 snippet bt "border-top: ___"
-border-top: {solid 1px #333}
+border-top: ${1:solid 1px #333}
 endsnippet
 
 snippet bb "border-bottom: ___"
-border-bottom: {solid 1px #333}
+border-bottom: ${1:solid 1px #333}
 endsnippet
 
 snippet bl "border-left: ___"
-border-left: {solid 1px #333}
+border-left: ${1:solid 1px #333}
 endsnippet
 
 snippet br "border-right: ___"
-border-right: {solid 1px #333}
+border-right: ${1:solid 1px #333}
 endsnippet
 
 snippet bt0 "border-top: 0"
@@ -129,27 +129,27 @@ border-right: 0
 endsnippet
 
 snippet bg "background: ___"
-background: {#fff url(image.png) no-repeat left top fixed}
+background: ${1:#fff url(image.png) no-repeat left top fixed}
 endsnippet
 
 snippet bgp "background-position: ___"
-background-position: {x y}
+background-position: ${1:x y}
 endsnippet
 
 snippet bgi "background-image: ___"
-background-image: {url()}
+background-image: ${1:url()}
 endsnippet
 
 snippet bgc "background-color: ___"
-background-color: {transparent}
+background-color: ${1:transparent}
 endsnippet
 
 snippet bgr "backgronud-repeat: ___"
-backgronud-repeat: {no-repeat}
+backgronud-repeat: ${1:no-repeat}
 endsnippet
 
 snippet bga "background-attachment: ___"
-background-attachment: {scroll|fixed|local}
+background-attachment: ${1:scroll|fixed|local}
 endsnippet
 
 snippet bgas "background-attachment: scroll"
@@ -165,32 +165,32 @@ background-attachment: local
 endsnippet
 
 snippet f "font: ___"
-font: {italic bold 1em/1.5em serif}
+font: ${1:italic bold 1em/1.5em serif}
 endsnippet
 
 snippet font "font: ___"
-font: {italic bold 1em/1.5em serif}
+font: ${1:italic bold 1em/1.5em serif}
 endsnippet
 
 snippet ff "font-family: ___"
-font-family: {sans-serif}
+font-family: ${1:sans-serif}
 endsnippet
 
 snippet fs "font-size: ___"
-font-size: {1em}
+font-size: ${1:1em}
 endsnippet
 
 snippet lh "line-height: ___"
-line-height: {1.5}
+line-height: ${1:1.5}
 endsnippet
 
 snippet ls "letter-spacing: ___"
-letter-spacing: {0}
+letter-spacing: ${1:0}
 endsnippet
 
 snippet hlh "height: ___; line-height: ___"
-height: {0px}
-line-height: {1.5}
+height: ${1:0px}
+line-height: ${2:1.5}
 endsnippet
 
 snippet fn "float: none"
@@ -206,7 +206,7 @@ float: right
 endsnippet
 
 snippet co "color: ___"
-color: {#333}
+color: ${1:#333}
 endsnippet
 
 snippet cl "clear: left"
@@ -234,7 +234,7 @@ cursor: text
 endsnippet
 
 snippet cu "cursor: ___"
-cursor: {default|pointer|text}
+cursor: ${1:default|pointer|text}
 endsnippet
 
 snippet cut "cursor: text"
@@ -262,7 +262,7 @@ cursor: ns-resize
 endsnippet
 
 snippet d "display: ___"
-display: {none|inline|block}
+display: ${1:none|inline|block}
 endsnippet
 
 snippet di "display: inline"
@@ -338,7 +338,7 @@ font-weight: 900
 endsnippet
 
 snippet va "vertical-align: ___"
-vertical-align: {top|bottom|baseline|middle}
+vertical-align: ${1:top|bottom|baseline|middle}
 endsnippet
 
 snippet vat "vertical-align: top"
@@ -358,7 +358,7 @@ vertical-align: middle
 endsnippet
 
 snippet v "visibility: ___"
-visibility: {visible|hidden|collapse}
+visibility: ${1:visible|hidden|collapse}
 endsnippet
 
 snippet vh "visibility: hidden"
@@ -374,7 +374,7 @@ border-collapse: collapse
 endsnippet
 
 snippet tt "text-transform: ___"
-text-transform: {capitalize|uppercase|lowercase}
+text-transform: ${1:capitalize|uppercase|lowercase}
 endsnippet
 
 snippet ttu "text-transform: uppercase"
@@ -390,7 +390,7 @@ text-transform: capitalize
 endsnippet
 
 snippet td "text-decoration: ___"
-text-decoration: {none|underline|strikethrough}
+text-decoration: ${1:none|underline|strikethrough}
 endsnippet
 
 snippet tdu "text-decoration: underline"
@@ -406,15 +406,15 @@ text-decoration: line-through
 endsnippet
 
 snippet ti "text-indent: ___"
-text-indent: {0}
+text-indent: ${1:0}
 endsnippet
 
 snippet ts "text-shadow: ___"
-text-shadow: {0 1px 0 #333}
+text-shadow: ${1:0 1px 0 #333}
 endsnippet
 
 snippet o "overflow: ___"
-overflow: {hidden|auto|scroll}
+overflow: ${1:hidden|auto|scroll}
 endsnippet
 
 snippet os "overflow: scroll"
@@ -454,7 +454,7 @@ overflow-y: auto
 endsnippet
 
 snippet ta "text-align: ___"
-text-align: {left|right|center|justify}
+text-align: ${1:left|right|center|justify}
 endsnippet
 
 snippet tar "text-align: right"
@@ -490,39 +490,39 @@ position: static
 endsnippet
 
 snippet l "left: ___"
-left: {0}
+left: ${1:0}
 endsnippet
 
 snippet r "right: ___"
-right: {0}
+right: ${1:0}
 endsnippet
 
 snippet lt "left: ___; top: ___"
-left: {0}
-top: {0}
+left: ${1:0}
+top: ${2:0}
 endsnippet
 
 snippet lb "left: ___; bottom: ___"
-left: {0}
-bottom: {0}
+left: ${1:0}
+bottom: ${2:0}
 endsnippet
 
 snippet rt "right: ___; top: ___"
-right: {0}
-top: {0}
+right: ${1:0}
+top: ${2:0}
 endsnippet
 
 snippet rb "right: ___; bottom: ___"
-right: {0}
-bottom: {0}
+right: ${1:0}
+bottom: ${2:0}
 endsnippet
 
 snippet zi "z-index: ___"
-z-index: {1}
+z-index: ${1:1}
 endsnippet
 
 snippet tl "table-layout: ___"
-table-layout: {fixed|auto}
+table-layout: ${1:fixed|auto}
 endsnippet
 
 snippet tlf "table-layout: fixed"
@@ -578,35 +578,35 @@ snippet @mobile "@media (max-width: 480px) /* Mobile */"
 endsnippet
 
 snippet brad "border-radius: ___"
-+border-radius({3px})
++border-radius(${1:3px})
 endsnippet
 
 snippet btrad "border-top-radius: ___"
-+border-top-radius({3px})
++border-top-radius(${1:3px})
 endsnippet
 
 snippet btlrad "border-top-left-radius: ___"
-+border-top-left-radius({3px})
++border-top-left-radius(${1:3px})
 endsnippet
 
 snippet btrrad "border-top-right-radius: ___"
-+border-top-right-radius({3px})
++border-top-right-radius(${1:3px})
 endsnippet
 
 snippet bbrad "border-bottom-radius: ___"
-+border-bottom-radius({3px})
++border-bottom-radius(${1:3px})
 endsnippet
 
 snippet bblrad "border-bottom-left-radius: ___"
-+border-bottom-left-radius({3px})
++border-bottom-left-radius(${1:3px})
 endsnippet
 
 snippet bbrrad "border-bottom-right-radius: ___"
-+border-bottom-right-radius({3px})
++border-bottom-right-radius(${1:3px})
 endsnippet
 
 snippet sh "box-shadow: ___"
-+box-shadow({0 1px 2px #fff})
++box-shadow(${1:0 1px 2px #fff})
 endsnippet
 
 snippet bsb "box-sizing: border-box"
@@ -618,23 +618,23 @@ snippet bsp "box-sizing: padding-box"
 endsnippet
 
 snippet trans "transition: ___"
-+transition({all 300ms ease})
++transition(${1:all 300ms ease})
 endsnippet
 
 snippet transit "transition: ___"
-+transition({all 300ms ease})
++transition(${1:all 300ms ease})
 endsnippet
 
 snippet xf "transform: ___"
-+transform({scale(1.0)})
++transform(${1:scale(1.0)})
 endsnippet
 
 snippet xform "transform: ___"
-+transform({scale(1.0)})
++transform(${1:scale(1.0)})
 endsnippet
 
 snippet op "opacity: ___"
-+opacity({0})
++opacity(${1:0})
 endsnippet
 
 snippet bgclip "background-clip: padding-box"
@@ -642,7 +642,7 @@ snippet bgclip "background-clip: padding-box"
 endsnippet
 
 snippet us "user-select: ___"
-+user-select({none|text|toggle|element|elements|all})
++user-select(${1:none|text|toggle|element|elements|all})
 endsnippet
 
 snippet usa "user-select: all"
@@ -658,5 +658,5 @@ snippet usn "user-select: none"
 endsnippet
 
 snippet an "animation: ___ ___"
-+animation({name} {300ms linear infinite})
++animation(${1:name} ${2:300ms linear infinite})
 endsnippet

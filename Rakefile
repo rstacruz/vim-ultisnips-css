@@ -90,7 +90,7 @@ private
     snippet = value.dup
 
     snippet.gsub!(/; /, "\n")
-    unplaceholder snippet
+    snippet = unplaceholder(snippet)
     if mixinify
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
