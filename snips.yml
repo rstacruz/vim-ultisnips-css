@@ -15,6 +15,9 @@ simple: # Snippets that will expand.
   w: "width: {0}"
   h: "height: {0}"
   mh: "min-height: {100%}"
+  mw: "min-width: {100%}"
+  mah: "max-height: {none}"
+  maw: "max-width: {none}"
 
   m:  "margin: {0}"
   mt: "margin-top: {0}"
@@ -63,6 +66,8 @@ simple: # Snippets that will expand.
   fl: "float: left"
   fr: "float: right"
 
+  co: "color: {#333}"
+
   cl: "clear: left"
   cr: "clear: right"
   cb: "clear: both"
@@ -71,11 +76,22 @@ simple: # Snippets that will expand.
   cp: "cursor: pointer"
   ct: "cursor: text"
 
-  d: "display: {none|inline|block|inline-block}"
-  di: "display: inline"
-  dn: "display: none"
-  db: "display: none"
+  cu:   "cursor: {default|pointer|text}"
+  cut:  "cursor: text"
+  cup:  "cursor: pointer"
+  cud:  "cursor: default"
+  cuna: "cursor: not-allowed"
+  cuew: "cursor: ew-resize"
+  cuns: "cursor: ns-resize"
+
+  d:   "display: {none|inline|block}"
+  di:  "display: inline"
+  dn:  "display: none"
+  db:  "display: none"
   dib: "display: inline-block"
+  dt:  "display: table"
+  dtc: "display: table-cell"
+  dtr: "display: table-row"
 
   fsn: "font-style: normal"
   fsi: "font-style: italic"
@@ -100,7 +116,6 @@ simple: # Snippets that will expand.
   vh: "visibility: hidden"
   vv: "visibility: visible"
 
-  bc:  "border-collapse: collapse"
   bcc: "border-collapse: collapse"
 
   tt:  "text-transform: {capitalize|uppercase|lowercase}"
@@ -150,13 +165,9 @@ simple: # Snippets that will expand.
 
   zi: "z-index: {1}"
 
-  cu:   "cursor: {default|pointer|text}"
-  cut:  "cursor: text"
-  cup:  "cursor: pointer"
-  cud:  "cursor: default"
-  cuna: "cursor: not-allowed"
-  cuew: "cursor: ew-resize"
-  cuns: "cursor: ns-resize"
+  tl:  "table-layout: {fixed|auto}"
+  tlf: "table-layout: fixed"
+  tla: "table-layout: auto"
 
 # ----------------------------------------------------------------------------
 media: # Presets for media queries
