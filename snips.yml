@@ -222,8 +222,8 @@ css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
   bsb: "box-sizing: border-box"
   bsp: "box-sizing: padding-box"
 
-  ts:      "transition: {all 300ms ease}"
-  tf:      "transform: {scale(1.0)}"
+  tst: "transition: {all 300ms ease}"
+  tf: "transform: {scale(1.0)}"
 
   op: "opacity: {0}"
   bgclip: "background-clip: padding-box"
