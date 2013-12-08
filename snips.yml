@@ -13,6 +13,7 @@ simple: # Snippets that will expand.
   b0: "border: 0"
 
   bs: "box-shadow: {0 1px 2px #fff}"
+  brad: "border-radius: {3px}"
 
   w: "width: {0}"
   h: "height: {0}"
@@ -211,7 +212,6 @@ stylus-expressions: # Stylus-specific expressions
 css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
 # ----------------------------------------------------------------------------
 
-  brad:   "border-radius: {3px}"
   btrad:  "border-top-radius: {3px}"
   btlrad: "border-top-left-radius: {3px}"
   btrrad: "border-top-right-radius: {3px}"
