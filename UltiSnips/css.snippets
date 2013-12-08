@@ -554,20 +554,24 @@ snippet ra "rgba(___, ___)"
 rgba(${1:0, 0, 0}, ${2:0.5})
 endsnippet
 
-snippet @big "@media (min-width: 1180px) /* Big desktop */"
-@media (min-width: 1180px) { /* Big desktop */
+snippet @big "@media (min-width: 1180px) // big desktop"
+@media (min-width: 1180px) { // big desktop
 endsnippet
 
-snippet @desktop "@media (min-width: 768px) /* Desktop */"
-@media (min-width: 768px) { /* Desktop */
+snippet @desktop "@media (min-width: 769px) // desktop"
+@media (min-width: 769px) { // desktop
 endsnippet
 
-snippet @tablet "@media (min-width: 480px) /* Tablet & Desktop */"
-@media (min-width: 480px) { /* Tablet & Desktop */
+snippet @tablet "@media (min-width: 481px) // tablet & desktop"
+@media (min-width: 481px) { // tablet & desktop
 endsnippet
 
-snippet @mobile "@media (max-width: 480px) /* Mobile */"
-@media (max-width: 480px) { /* Mobile */
+snippet @otablet "@media (min-width: 481px) and (max-width: 768px) // tablet"
+@media (min-width: 481px) { and (max-width: 768px) { // tablet
+endsnippet
+
+snippet @mobile "@media (max-width: 481px) // mobile"
+@media (max-width: 481px) { // mobile
 endsnippet
 
 snippet brad "border-radius: ___"
