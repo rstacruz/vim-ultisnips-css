@@ -198,7 +198,7 @@ sass-expressions: # Sass-specific expressions
 
   rb: "rgba(black, {0.2})"
   rw: "rgba(white, {0.2})"
-  cf: "+pie-clearfix"
+  cf: "+clearfix"
 
 # ----------------------------------------------------------------------------
 stylus-expressions: # Stylus-specific expressions
