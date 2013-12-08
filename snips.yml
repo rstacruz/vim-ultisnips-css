@@ -12,6 +12,8 @@ simple: # Snippets that will expand.
   p0: "padding: 0"
   b0: "border: 0"
 
+  bs: "box-shadow: {0 1px 2px #fff}"
+
   w: "width: {0}"
   h: "height: {0}"
   wh: "width: {0}; height: {0}"
@@ -217,15 +219,11 @@ css3: # converts to Compass mixins in Sass, stays as plain stuff in CSS/Stylus.
   bblrad: "border-bottom-left-radius: {3px}"
   bbrrad: "border-bottom-right-radius: {3px}"
 
-  sh: "box-shadow: {0 1px 2px #fff}"
-
   bsb: "box-sizing: border-box"
   bsp: "box-sizing: padding-box"
 
-  trans:   "transition: {all 300ms ease}"
-  transit: "transition: {all 300ms ease}"
-  xf:      "transform: {scale(1.0)}"
-  xform:   "transform: {scale(1.0)}"
+  ts:      "transition: {all 300ms ease}"
+  tf:      "transform: {scale(1.0)}"
 
   op: "opacity: {0}"
   bgclip: "background-clip: padding-box"

@@ -28,6 +28,10 @@ snippet b0 "border: 0"
 border: 0;
 endsnippet
 
+snippet bs "box-shadow: ___"
+box-shadow: ${1:0 1px 2px #fff};
+endsnippet
+
 snippet w "width: ___"
 width: ${1:0};
 endsnippet
@@ -582,8 +586,8 @@ snippet @otablet "@media (min-width: 481px) and (max-width: 768px) // tablet"
 @media (min-width: 481px) { and (max-width: 768px) { // tablet
 endsnippet
 
-snippet @mobile "@media (max-width: 481px) // mobile"
-@media (max-width: 481px) { // mobile
+snippet @mobile "@media (max-width: 480px) // mobile"
+@media (max-width: 480px) { // mobile
 endsnippet
 
 snippet brad "border-radius: ___"
@@ -614,10 +618,6 @@ snippet bbrrad "border-bottom-right-radius: ___"
 @include border-bottom-right-radius(${1:3px});
 endsnippet
 
-snippet sh "box-shadow: ___"
-@include box-shadow(${1:0 1px 2px #fff});
-endsnippet
-
 snippet bsb "box-sizing: border-box"
 @include box-sizing(border-box);
 endsnippet
@@ -626,19 +626,11 @@ snippet bsp "box-sizing: padding-box"
 @include box-sizing(padding-box);
 endsnippet
 
-snippet trans "transition: ___"
+snippet ts "transition: ___"
 @include transition(${1:all 300ms ease});
 endsnippet
 
-snippet transit "transition: ___"
-@include transition(${1:all 300ms ease});
-endsnippet
-
-snippet xf "transform: ___"
-@include transform(${1:scale(1.0)});
-endsnippet
-
-snippet xform "transform: ___"
+snippet tf "transform: ___"
 @include transform(${1:scale(1.0)});
 endsnippet
 
