@@ -36,7 +36,10 @@ Add to your .vimrc:
 Reference
 ---------
 
-<!-- reference start -->
+Below is a list of available snippets. For those with `#`, you can replace it with a number.
+For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
+
+<!-- reference start (don't edit this!) -->
 | Snippet | Description |
 | ---- | ---- |
 | **cf** | `+clearfix` |

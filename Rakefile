@@ -24,6 +24,6 @@ task :update_readme => :env do
   out = $snips.to_markdown
 
   readme = File.read(fn)
-  readme.gsub!(/(<!-- reference start -->\n).*(<!-- reference end -->)/m, "\\1#{out}\\2")
+  readme.gsub!(/(<!-- reference start .*? -->\n).*(<!-- reference end -->)/m, "\\1#{out}\\2")
   File.write(fn, readme)
 end
