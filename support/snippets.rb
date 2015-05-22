@@ -11,60 +11,39 @@ class Snippets
     end
 
     unless format == :scss
-      out += @snips['simple'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format)
-      end
+      out += work('simple', format)
     end
 
     unless format == :scss
-      out += @snips['expressions'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format, expression: true)
-      end
+      out += work('expressions', format, expression: true)
     end
 
     if format == :sass || format == :scss
-      out += @snips['sass-expressions'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format, expression: true)
-      end
+      out += work('sass-expressions', format, expression: true)
     end
 
     if format == :stylus
-      out += @snips['stylus-expressions'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format, expression: true)
-      end
+      out += work('stylus-expressions', format, expression: true)
     end
 
     unless format == :scss
-      out += @snips['media'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format, media: true, expression: true)
-      end
+      out += work('media', format, media: true, expression: true)
     end
 
     unless format == :scss
-      out += @snips['css3'].map do |key, val|
-        block \
-          name: key,
-          desc: to_desc(val),
-          snip: reformat(val, format, mixin: true)
-      end
+      out += work('css3', format, mixin: true)
     end
 
     out.join("\n\n") + "\n"
+  end
+
+  def work(section, format, options = {})
+    @snips[section].map do |key, val|
+      block \
+        name: key, \
+        desc: to_desc(val), \
+        snip: reformat(val, format, options)
+    end
   end
 
 private
