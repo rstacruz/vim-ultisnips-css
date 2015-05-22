@@ -71,7 +71,7 @@ Reference
 | **bold** | `font-weight: bold;` |
 | **br** | `border-right: {solid 1px #333}` |
 | **br0** | `border-right: 0;` |
-| **brad** | `border-radius: ` |
+| **brad** | `border-radius: {3px}` |
 | **brr** | `border-top-right-radius: {!3px}; border-bottom-right-radius: {!3px};` |
 | **bs** | `box-shadow: ` |
 | **bsb** | `box-sizing: border-box;` |
@@ -209,6 +209,8 @@ Reference
 | **vh** | `visibility: hidden;` |
 | **vv** | `visibility: visible;` |
 | **w** | `width: {0}` |
+| **w100** | `width: 100%;` |
+| **wa** | `width: auto;` |
 | **wh** | `width: {0}; height: {0};` |
 | **zi** | `z-index: {1}` |
 <!-- reference end -->

@@ -6,18 +6,32 @@ class Snippets
   def to_s(format)
     out = []
 
-    @snips.each do |name, section|
-      if section['formats'].include?(format.to_s)
-        out += section['snippets'].map do |key, val|
-          block \
-            name: key,
-            desc: to_desc(val),
-            snip: reformat(val, format, section['options'] || {})
-        end
-      end
+    snippets(format).each do |name, snippet, options|
+      out << block(
+        name: name,
+        desc: to_desc(snippet),
+        snip: reformat(snippet, format, options || {}))
     end
 
     out.join("\n\n") + "\n"
+  end
+
+  def snippets(format)
+    Enumerator.new do |y|
+      @snips.each do |name, section|
+        if section['formats'].include?(format.to_s)
+          section['snippets'].each do |key, val|
+            if key.include?('#')
+              (0..30).each do |i|
+                y << [key, val, section['options']]
+              end
+            else
+              y << [key, val, section['options']]
+            end
+          end
+        end
+      end
+    end
   end
 
   def to_markdown

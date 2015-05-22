@@ -27,10 +27,13 @@ simple: # Snippets that will expand.
     b0: "border: 0;"
 
     bs: "box-shadow: "
-    brad: "border-radius: "
+    brad: "border-radius: {3px}"
+    # brad#: "border-radius: {#px}"
 
     w: "width: {0}"
     h: "height: {0}"
+    w100: "width: 100%;"
+    wa: "width: auto;"
     wh: "width: {0}; height: {0};"
     mh: "min-height: {100%}"
     mw: "min-width: {100%}"
@@ -73,7 +76,7 @@ simple: # Snippets that will expand.
     bgaf: "background-attachment: fixed;"
     bgal: "background-attachment: local;"
 
-    f: "font: {italic bold 1em/1.5em serif}"
+    f:    "font: {italic bold 1em/1.5em serif}"
     font: "font: {italic bold 1em/1.5em serif}"
 
     ff: "font-family: {sans-serif}"
