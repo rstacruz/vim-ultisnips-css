@@ -39,9 +39,11 @@ private
     format == :sass || format == :scss || format == :stylus
   end
 
-  # "border: {solid 1px #333}" => "border: ___"
+  # "border: {solid 1px #333};" => "border: ___"
   def to_desc(snippet)
-    snippet.gsub(/\{(.*?)\}/, '___')
+    snippet
+      .gsub(/;$/, '')
+      .gsub(/\{(.*?)\}/, '___')
   end
 
   # "{url()}" => "${1:url()}"
@@ -56,7 +58,12 @@ private
     snippet = value.dup
 
     # Line breaks
-    snippet.gsub!(/; /, "\n")
+    if braced?(format)
+      snippet.gsub!(/; /, ";\n")
+    else
+      snippet.gsub!(/; /, "\n")
+      snippet.gsub!(/;$/, '')
+    end
 
     # Fix placeholders ("{url()}" => "${1:url()}"
     snippet = unplaceholder(snippet)
@@ -79,9 +86,6 @@ private
     if options['media']
       snippet.gsub!(') ', ') { ') if braced?(format)
     end
-
-    # Add a semicolon at the end. Skip it for non-statements
-    snippet.gsub!(/$/, ';')  if braced?(format) && !options['expression']
 
     snippet
   end
