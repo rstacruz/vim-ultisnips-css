@@ -34,6 +34,7 @@ simple: # Snippets that will expand.
     h: "height: {0}"
     w100: "width: 100%;"
     wa: "width: auto;"
+    h100: "height: 100%;"
     wh: "width: {0}; height: {0};"
     mh: "min-height: {100%}"
     mw: "min-width: {100%}"
@@ -94,6 +95,7 @@ simple: # Snippets that will expand.
     bgsc: "background-size: cover;"
     bgst: "background-size: contain;"
     bgsa: "background-size: auto;"
+    bgcover: "background-size: cover;"
 
     bgclip: "background-clip: {border-box|padding-box|content-box};"
     bgcc:   "background-clip: content-box;"

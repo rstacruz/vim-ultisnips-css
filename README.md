@@ -64,6 +64,7 @@ Reference
 | **bgcb** | `background-clip: border-box;` |
 | **bgcc** | `background-clip: content-box;` |
 | **bgclip** | `background-clip: {border-box|padding-box|content-box};` |
+| **bgcover** | `background-size: cover;` |
 | **bgcp** | `background-clip: padding-box;` |
 | **bgi** | `background-image: {url()}` |
 | **bgp** | `background-position: {x y}` |
@@ -134,6 +135,7 @@ Reference
 | **fwn** | `font-weight: normal;` |
 | **h#** | `height: {#};` |
 | **h** | `height: {0}` |
+| **h100** | `height: 100%;` |
 | **hlh** | `height: {0px}; line-height: {1.5};` |
 | **italic** | `font-style: italic;` |
 | **l#** | `left: {#};` |
