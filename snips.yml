@@ -26,34 +26,34 @@ simple: # Snippets that will expand.
     p0: "padding: 0;"
     b0: "border: 0;"
 
-    bs: "box-shadow: {0 1px 2px #fff};"
-    brad: "border-radius: {3px};"
+    bs: "box-shadow: "
+    brad: "border-radius: "
 
-    w: "width: {0};"
-    h: "height: {0};"
+    w: "width: {0}"
+    h: "height: {0}"
     wh: "width: {0}; height: {0};"
-    mh: "min-height: {100%};"
-    mw: "min-width: {100%};"
-    mah: "max-height: {none};"
-    maw: "max-width: {none};"
+    mh: "min-height: {100%}"
+    mw: "min-width: {100%}"
+    mah: "max-height: {none}"
+    maw: "max-width: {none}"
 
-    m:  "margin: {0};"
-    mt: "margin-top: {0};"
-    mb: "margin-bottom: {0};"
-    ml: "margin-left: {0};"
-    mr: "margin-right: {0};"
+    m:  "margin: {0}"
+    mt: "margin-top: {0}"
+    mb: "margin-bottom: {0}"
+    ml: "margin-left: {0}"
+    mr: "margin-right: {0}"
 
-    p:  "padding: {0};"
-    pt: "padding-top: {0};"
-    pb: "padding-bottom: {0};"
-    pl: "padding-left: {0};"
-    pr: "padding-right: {0};"
+    p:  "padding: {0}"
+    pt: "padding-top: {0}"
+    pb: "padding-bottom: {0}"
+    pl: "padding-left: {0}"
+    pr: "padding-right: {0}"
 
-    b:  "border: {solid 1px #333};"
-    bt: "border-top: {solid 1px #333};"
-    bb: "border-bottom: {solid 1px #333};"
-    bl: "border-left: {solid 1px #333};"
-    br: "border-right: {solid 1px #333};"
+    b:  "border: {solid 1px #333}"
+    bt: "border-top: {solid 1px #333}"
+    bb: "border-bottom: {solid 1px #333}"
+    bl: "border-left: {solid 1px #333}"
+    br: "border-right: {solid 1px #333}"
 
     bt0: "border-top: 0;"
     bb0: "border-bottom: 0;"
@@ -62,31 +62,31 @@ simple: # Snippets that will expand.
 
     bcc: "border-collapse: collapse;"
 
-    bg: "background: {#fff url(image.png) no-repeat left top fixed};"
-    bgp: "background-position: {x y};"
-    bgi: "background-image: {url()};"
-    bgc: "background-color: {transparent};"
-    bgr: "background-repeat: {no-repeat};"
+    bg: "background: {#fff url(image.png) no-repeat left top fixed}"
+    bgp: "background-position: {x y}"
+    bgi: "background-image: {url()}"
+    bgc: "background-color: {transparent}"
+    bgr: "background-repeat: {no-repeat}"
 
-    bga:  "background-attachment: {scroll|fixed|local};"
+    bga:  "background-attachment: {scroll|fixed|local}"
     bgas: "background-attachment: scroll;"
     bgaf: "background-attachment: fixed;"
     bgal: "background-attachment: local;"
 
-    f: "font: {italic bold 1em/1.5em serif};"
-    font: "font: {italic bold 1em/1.5em serif};"
+    f: "font: {italic bold 1em/1.5em serif}"
+    font: "font: {italic bold 1em/1.5em serif}"
 
-    ff: "font-family: {sans-serif};"
-    fs: "font-size: {1em};"
-    lh: "line-height: {1.5};"
-    ls: "letter-spacing: {0};"
+    ff: "font-family: {sans-serif}"
+    fs: "font-size: {1em}"
+    lh: "line-height: {1.5}"
+    ls: "letter-spacing: {0}"
     hlh: "height: {0px}; line-height: {1.5};"
 
     fn: "float: none;"
     fl: "float: left;"
     fr: "float: right;"
 
-    co: "color: {#333};"
+    co: "color: {#333}"
 
     cl: "clear: left;"
     cr: "clear: right;"
@@ -96,7 +96,7 @@ simple: # Snippets that will expand.
     cp: "cursor: pointer;"
     ct: "cursor: text;"
 
-    cu:   "cursor: {default|pointer|text};"
+    cu:   "cursor: {default|pointer|text}"
     cut:  "cursor: text;"
     cup:  "cursor: pointer;"
     cud:  "cursor: default;"
@@ -104,7 +104,7 @@ simple: # Snippets that will expand.
     cuew: "cursor: ew-resize;"
     cuns: "cursor: ns-resize;"
 
-    d:   "display: {none|inline|block};"
+    d:   "display: {none|inline|block}"
     di:  "display: inline;"
     dn:  "display: none;"
     db:  "display: block;"
@@ -127,31 +127,35 @@ simple: # Snippets that will expand.
     fw7:  "font-weight: 700;"
     fw9:  "font-weight: 900;"
 
-    va:  "vertical-align: {top|bottom|baseline|middle};"
+    fi:   "font-style: italic;"
+    fn:   "font-weight: normal;"
+    fb:   "font-weight: bold;"
+
+    va:  "vertical-align: {top|bottom|baseline|middle}"
     vat:  "vertical-align: top;"
     vab:  "vertical-align: bottom;"
     vabl: "vertical-align: baseline;"
     vam:  "vertical-align: middle;"
 
-    v: "visibility: {visible|hidden|collapse};"
+    v: "visibility: {visible|hidden|collapse}"
     vh: "visibility: hidden;"
     vv: "visibility: visible;"
 
-    tt:  "text-transform: {capitalize|uppercase|lowercase};"
+    tt:  "text-transform: {capitalize|uppercase|lowercase}"
     ttu: "text-transform: uppercase;"
     ttl: "text-transform: lowercase;"
     ttc: "text-transform: capitalize;"
 
-    td:   "text-decoration: {none|underline|strikethrough};"
+    td:   "text-decoration: {none|underline|strikethrough}"
     tdu:  "text-decoration: underline;"
     tdn:  "text-decoration: none;"
     tdlt: "text-decoration: line-through;"
 
-    ti: "text-indent: {0};"
+    ti: "text-indent: {0}"
 
-    ts: "text-shadow: {0 1px 0 #333};"
+    ts: "text-shadow: {0 1px 0 #333}"
 
-    o:  "overflow: {hidden|auto|scroll};"
+    o:  "overflow: {hidden|auto|scroll}"
     os: "overflow: scroll;"
     oh: "overflow: hidden;"
     oa: "overflow: auto;"
@@ -164,7 +168,7 @@ simple: # Snippets that will expand.
     oyh: "overflow-y: hidden;"
     oya: "overflow-y: auto;"
 
-    ta:  "text-align: {left|right|center|justify};"
+    ta:  "text-align: {left|right|center|justify}"
     tar: "text-align: right;"
     tal: "text-align: left;"
     tac: "text-align: center;"
@@ -175,16 +179,16 @@ simple: # Snippets that will expand.
     por: "position: relative;"
     pos: "position: static;"
 
-    l: "left: {0};"
-    r: "right: {0};"
+    l: "left: {0}"
+    r: "right: {0}"
     lt: "left: {0}; top: {0};"
     lb: "left: {0}; bottom: {0};"
     rt: "right: {0}; top: {0};"
     rb: "right: {0}; bottom: {0};"
 
-    zi: "z-index: {1};"
+    zi: "z-index: {1}"
 
-    tl:  "table-layout: {fixed|auto};"
+    tl:  "table-layout: {fixed|auto}"
     tlf: "table-layout: fixed;"
     tla: "table-layout: auto;"
 
@@ -247,10 +251,10 @@ css3:
 
   formats: [ css, sass, stylus ]
   snippets:
-    btlr: "border-top-left-radius: {3px};"
-    btrr: "border-top-right-radius: {3px};"
-    bblr: "border-bottom-left-radius: {3px};"
-    bbrr: "border-bottom-right-radius: {3px};"
+    btlr: "border-top-left-radius: {3px}"
+    btrr: "border-top-right-radius: {3px}"
+    bblr: "border-bottom-left-radius: {3px}"
+    bbrr: "border-bottom-right-radius: {3px}"
 
     btr:  "border-top-left-radius: {!3px}; border-top-right-radius: {!3px};"
     bbr:  "border-bottom-left-radius: {!3px}; border-bottom-right-radius: {!3px};"
@@ -260,15 +264,15 @@ css3:
     bsb: "box-sizing: border-box;"
     bsp: "box-sizing: padding-box;"
 
-    tst: "transition: {all 300ms ease};"
-    tf: "transform: {scale(1.0)};"
+    tst: "transition: {all 300ms ease}"
+    tf: "transform: {scale(1.0)}"
 
-    op: "opacity: {0};"
+    op: "opacity: {0}"
     bgclip: "background-clip: padding-box;"
 
-    us:  "user-select: {none|text|toggle|element|elements|all};"
+    us:  "user-select: {none|text|toggle|element|elements|all}"
     usa: "user-select: all;"
     ust: "user-select: text;"
     usn: "user-select: none;"
 
-    an: "animation: {name} {300ms linear infinite};"
+    an: "animation: {name 300ms linear infinite}"
