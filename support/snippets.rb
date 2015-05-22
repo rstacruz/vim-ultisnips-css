@@ -83,7 +83,7 @@ private
     end
 
     # Media queries: add a starting bracket if needed
-    if options['media']
+    if snippet.include?("@media")
       snippet.gsub!(') ', ') { ') if braced?(format)
     end
 

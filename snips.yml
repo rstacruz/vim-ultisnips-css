@@ -16,7 +16,7 @@
 # These `options` are available:
 #
 # mixin - turns it into a mixin for the given format
-#
+
 simple: # Snippets that will expand.
   formats: [ css, sass, stylus ]
   options: {}
@@ -204,23 +204,22 @@ expressions: # Things that are not properties
     ra: "rgba({0, 0, 0}, {0.5})"
 
 # ----------------------------------------------------------------------------
-sass-expressions: # Sass-specific expressions
-
-  formats: [ sass, scss ]
-  options: {}
+colors:
+  formats: [ sass, scss, stylus ]
   snippets:
     rb: "rgba(black, {0.2})"
     rw: "rgba(white, {0.2})"
+
+# ----------------------------------------------------------------------------
+sass-mixins:
+  formats: [ sass, scss ]
+  snippets:
     cf: "+clearfix"
 
 # ----------------------------------------------------------------------------
-stylus-expressions: # Stylus-specific expressions
-
+stylus-mixins:
   formats: [ stylus ]
-  options: {}
   snippets:
-    rb: "rgba(black, {0.2})"
-    rw: "rgba(white, {0.2})"
     cf: "clearfix()"
 
 # ----------------------------------------------------------------------------
@@ -239,7 +238,6 @@ media: # Presets for media queries
   # desktop                                                      ^---------->
 
   formats: [ css, sass, stylus ]
-  options: { media: true, expression: true }
   snippets:
     "@portrait":   "@media (max-width: 480px) /* portrait */"
     "@phone":      "@media (max-width: 768px) /* phone */"
