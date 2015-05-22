@@ -235,6 +235,7 @@ Reference
 | **vabl** | `vertical-align: baseline;` |
 | **vam** | `vertical-align: middle;` |
 | **vat** | `vertical-align: top;` |
+| **vc** | `visibility: collapse;` |
 | **vh** | `visibility: hidden;` |
 | **vv** | `visibility: visible;` |
 | **w#** | `width: {#};` |

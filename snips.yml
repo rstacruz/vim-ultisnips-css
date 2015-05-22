@@ -177,6 +177,7 @@ simple: # Snippets that will expand.
     v: "visibility: {visible|hidden|collapse}"
     vh: "visibility: hidden;"
     vv: "visibility: visible;"
+    vc: "visibility: collapse;"
 
     tt:  "text-transform: {capitalize|uppercase|lowercase}"
     ttu: "text-transform: uppercase;"
