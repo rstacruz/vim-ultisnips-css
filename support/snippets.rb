@@ -26,13 +26,17 @@ class Snippets
 
 private
 
-  # Use brackets?
-  def bracketed?(format)
+  # Use braces?
+  def braced?(format)
     ! indented?(format)
   end
 
   def indented?(format)
     format == :sass || format == :stylus
+  end
+
+  def slash_comments?(format)
+    format == :sass || format == :scss || format == :stylus
   end
 
   # "border: {solid 1px #333}" => "border: ___"
@@ -57,7 +61,7 @@ private
     # Fix placeholders ("{url()}" => "${1:url()}"
     snippet = unplaceholder(snippet)
 
-    # Fix mixins
+    # make them into mixins
     if options['mixin']
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
@@ -66,13 +70,18 @@ private
       end
     end
 
+    # Fix comments
+    if slash_comments?(format)
+      snippet.gsub!(/\/\* (.*?) \*\/$/, "// \\1")
+    end
+
     # Media queries: add a starting bracket if needed
     if options['media']
-      snippet.gsub!(') ', ') { ') if bracketed?(format)
+      snippet.gsub!(') ', ') { ') if braced?(format)
     end
 
     # Add a semicolon at the end. Skip it for non-statements
-    snippet.gsub!(/$/, ';')  if bracketed?(format) && !options['expression']
+    snippet.gsub!(/$/, ';')  if braced?(format) && !options['expression']
 
     snippet
   end

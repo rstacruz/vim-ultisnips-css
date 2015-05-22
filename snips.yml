@@ -1,5 +1,25 @@
+# Edit this and run `rake`.
+# Each section can contain:
+#
+# formats - an array of formats that the snippet will be included in.
+# options - directs how the block will be transformed.
+#
+# These `formats` are available: css, scss, sass, stylus.
+#
+# Snippets will be transformed accordingly:
+#
+# - For braced languages (css, scss), media queries will start with a `{`.
+# - For languages that support slash comments (not css), `/* ... */` will be
+#   turned into `// ...`.
+# - For braced languages (css, scss), statements will end in a `;`
+#
+# These `options` are available:
+#
+# mixin - turns it into a mixin for the given format
+#
 simple: # Snippets that will expand.
   formats: [ css, sass, stylus ]
+  options: {}
   snippets:
     moa: "margin: 0 auto"
     m0a: "margin: 0 auto"
@@ -233,7 +253,7 @@ media: # Presets for media queries
 css3:
 
   formats: [ css, sass, stylus ]
-  options: { mixin: true }
+  options: {}
   snippets:
     btrad:  "border-top-radius: {3px}"
     btlrad: "border-top-left-radius: {3px}"
