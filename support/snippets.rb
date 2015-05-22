@@ -52,14 +52,15 @@ class Snippets
     out << "| Snippet | Description |"
     out << "| ---- | ---- |"
 
-    lines = []
-    @snips.each do |name, section|
-      lines += section['snippets'].map do |key, val|
-        %[| **#{key}** | `#{val}` |]
-      end
+    snips = @snips.flat_map do |name, section|
+      section['snippets'].to_a
     end
 
-    out += lines.sort
+    snips = snips.sort_by { |_, snip| snip }
+    out += snips.map do |(sname, snip)|
+      %[| **#{sname}** | `#{snip}` |]
+    end
+
     out.join("\n") + "\n"
   end
 
