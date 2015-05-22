@@ -64,7 +64,7 @@ simple: # Snippets that will expand.
     bgp: "background-position: {x y};"
     bgi: "background-image: {url()};"
     bgc: "background-color: {transparent};"
-    bgr: "backgronud-repeat: {no-repeat};"
+    bgr: "background-repeat: {no-repeat};"
 
     bga:  "background-attachment: {scroll|fixed|local};"
     bgas: "background-attachment: scroll;"
