@@ -26,9 +26,9 @@ simple: # Snippets that will expand.
     p0: "padding: 0;"
     b0: "border: 0;"
 
-    bs: "box-shadow: "
-    brad: "border-radius: {3px}"
-    # brad#: "border-radius: {#px}"
+    bs: "box-shadow: {x y blur spead color}"
+    brad: "border-radius: {3}"
+    brad#: "border-radius: {#};"
 
     w: "width: {0}"
     h: "height: {0}"
@@ -40,17 +40,31 @@ simple: # Snippets that will expand.
     mah: "max-height: {none}"
     maw: "max-width: {none}"
 
+    w#: "width: {#};"
+    h#: "height: {#};"
+
     m:  "margin: {0}"
     mt: "margin-top: {0}"
     mb: "margin-bottom: {0}"
     ml: "margin-left: {0}"
     mr: "margin-right: {0}"
 
+    mt#: "margin-top: {#};"
+    mb#: "margin-bottom: {#};"
+    ml#: "margin-left: {#};"
+    mr#: "margin-right: {#};"
+
     p:  "padding: {0}"
     pt: "padding-top: {0}"
     pb: "padding-bottom: {0}"
     pl: "padding-left: {0}"
     pr: "padding-right: {0}"
+
+    p#:  "padding: {#};"
+    pt#: "padding-top: {#};"
+    pb#: "padding-bottom: {#};"
+    pl#: "padding-left: {#};"
+    pr#: "padding-right: {#};"
 
     b:  "border: {solid 1px #333}"
     bt: "border-top: {solid 1px #333}"

@@ -71,9 +71,10 @@ Reference
 | **bold** | `font-weight: bold;` |
 | **br** | `border-right: {solid 1px #333}` |
 | **br0** | `border-right: 0;` |
-| **brad** | `border-radius: {3px}` |
+| **brad#** | `border-radius: {#};` |
+| **brad** | `border-radius: {3}` |
 | **brr** | `border-top-right-radius: {!3px}; border-bottom-right-radius: {!3px};` |
-| **bs** | `box-shadow: ` |
+| **bs** | `box-shadow: {x y blur spead color}` |
 | **bsb** | `box-sizing: border-box;` |
 | **bsp** | `box-sizing: padding-box;` |
 | **bt** | `border-top: {solid 1px #333}` |
@@ -124,6 +125,7 @@ Reference
 | **fw9** | `font-weight: 900;` |
 | **fwb** | `font-weight: bold;` |
 | **fwn** | `font-weight: normal;` |
+| **h#** | `height: {#};` |
 | **h** | `height: {0}` |
 | **hlh** | `height: {0px}; line-height: {1.5};` |
 | **italic** | `font-style: italic;` |
@@ -138,12 +140,16 @@ Reference
 | **m0p0** | `margin: 0; padding: 0;` |
 | **mah** | `max-height: {none}` |
 | **maw** | `max-width: {none}` |
+| **mb#** | `margin-bottom: {#}` |
 | **mb** | `margin-bottom: {0}` |
 | **mh** | `min-height: {100%}` |
+| **ml#** | `margin-left: {#}` |
 | **ml** | `margin-left: {0}` |
 | **moa** | `margin: 0 auto;` |
 | **mopo** | `margin: 0; padding: 0;` |
+| **mr#** | `margin-right: {#}` |
 | **mr** | `margin-right: {0}` |
+| **mt#** | `margin-top: {#}` |
 | **mt** | `margin-top: {0}` |
 | **mw** | `min-width: {100%}` |
 | **nr** | `no-repeat` |
@@ -158,15 +164,20 @@ Reference
 | **oya** | `overflow-y: auto;` |
 | **oyh** | `overflow-y: hidden;` |
 | **oys** | `overflow-y: scroll;` |
+| **p#** | `padding: {#}` |
 | **p** | `padding: {0}` |
 | **p0** | `padding: 0;` |
+| **pb#** | `padding-bottom: {#}` |
 | **pb** | `padding-bottom: {0}` |
+| **pl#** | `padding-left: {#}` |
 | **pl** | `padding-left: {0}` |
 | **poa** | `position: absolute;` |
 | **pof** | `position: fixed;` |
 | **por** | `position: relative;` |
 | **pos** | `position: static;` |
+| **pr#** | `padding-right: {#}` |
 | **pr** | `padding-right: {0}` |
+| **pt#** | `padding-top: {#}` |
 | **pt** | `padding-top: {0}` |
 | **r** | `right: {0}` |
 | **ra** | `rgba({0, 0, 0}, {0.5})` |
@@ -208,6 +219,7 @@ Reference
 | **vat** | `vertical-align: top;` |
 | **vh** | `visibility: hidden;` |
 | **vv** | `visibility: visible;` |
+| **w#** | `width: {#};` |
 | **w** | `width: {0}` |
 | **w100** | `width: 100%;` |
 | **wa** | `width: auto;` |

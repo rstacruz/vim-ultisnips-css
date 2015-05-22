@@ -16,14 +16,28 @@ class Snippets
     out.join("\n\n") + "\n"
   end
 
+  def common_px_dimensions
+    (0..15).to_a +
+      (20..90).step(10).to_a +
+      (110..190).step(10).to_a +
+      (200..900).step(50).to_a
+  end
+
   def snippets(format)
     Enumerator.new do |y|
       @snips.each do |name, section|
         if section['formats'].include?(format.to_s)
           section['snippets'].each do |key, val|
             if key.include?('#')
-              (0..30).each do |i|
-                y << [key, val, section['options']]
+              common_px_dimensions.each do |i|
+                key_ = key.gsub('#', "#{i}")
+                val_ = val.gsub('{#}', i == 0 ? '0' : "#{i}px")
+                y << [key_, val_, section['options']]
+              end
+              (1..10).each do |i|
+                key_ = key.gsub('#', "#{i}e")
+                val_ = val.gsub('{#}', "#{i}em")
+                y << [key_, val_, section['options']]
               end
             else
               y << [key, val, section['options']]
