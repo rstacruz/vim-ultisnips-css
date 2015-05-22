@@ -176,14 +176,25 @@ simple: # Snippets that will expand.
 # ----------------------------------------------------------------------------
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
+#                           xs         sm              md             lg
+#                   480         768          992                1200
+#              '     '     '     '     '     '     '     '     '     '     '
+#                    '           '           '                 '
+# portrait    <------^           '           '                 '
+# phone       <------------------^           '                 '
+# mobile      <------------------------------^                 '
+# nondesktop  <------------------------------------------------^
+# tablet                         ^---------------------------------------->
+# laptop                                     ^---------------------------->
+# desktop                                                      ^---------->
 
-  "@portrait":   "@media (max-width: 480px) // portrait"
-  "@phone":      "@media (max-width: 768px) // phone"
-  "@mobile":     "@media (max-width: 992px) // mobile"
-  "@nondesktop": "@media (max-width: 1200px) // non-desktop"
-  "@tablet":     "@media (min-width: 769px) // tablet & desktop"
-  "@laptop":     "@media (min-width: 993px) // laptop"
-  "@desktop":    "@media (min-width: 1201px) // desktop"
+  "@portrait":   "@media (max-width: 480px) /* portrait */"
+  "@phone":      "@media (max-width: 768px) /* phone */"
+  "@mobile":     "@media (max-width: 992px) /* mobile */"
+  "@nondesktop": "@media (max-width: 1200px) /* phone, tablet, laptop */"
+  "@tablet":     "@media (min-width: 769px) /* tablet, desktop */"
+  "@laptop":     "@media (min-width: 993px) /* laptop */"
+  "@desktop":    "@media (min-width: 1201px) /* desktop */"
 
 # ----------------------------------------------------------------------------
 expressions: # Things that are not properties

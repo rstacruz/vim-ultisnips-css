@@ -50,7 +50,7 @@ class Snippets
       out += @snips['media'].map do |key, val|
         block \
           name: key,
-          desc: val,
+          desc: to_desc(val),
           snip: (bracketed?(format) ? val.gsub(') ', ') { ') : val)
       end
     end
