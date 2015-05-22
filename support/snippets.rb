@@ -38,7 +38,7 @@ class Snippets
   end
 
   def work(section, format, options = {})
-    @snips[section].map do |key, val|
+    @snips[section]['snippets'].map do |key, val|
       block \
         name: key, \
         desc: to_desc(val), \
