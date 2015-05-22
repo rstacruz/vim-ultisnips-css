@@ -12,14 +12,9 @@
 # - For languages that support slash comments (not css), `/* ... */` will be
 #   turned into `// ...`.
 # - For braced languages (css, scss), statements will end in a `;`
-#
-# These `options` are available:
-#
-# mixin - turns it into a mixin for the given format
 
 simple: # Snippets that will expand.
   formats: [ css, sass, stylus ]
-  options: {}
   snippets:
     moa: "margin: 0 auto;"
     m0a: "margin: 0 auto;"
@@ -196,7 +191,6 @@ simple: # Snippets that will expand.
 expressions: # Things that are not properties
 
   formats: [ css, sass, stylus ]
-  options: { }
   snippets:
     nr: "no-repeat"
     rx: "repeat-x"
@@ -251,7 +245,6 @@ media: # Presets for media queries
 css3:
 
   formats: [ css, sass, stylus ]
-  options: {}
   snippets:
     btrad:  "border-top-radius: {3px};"
     btlrad: "border-top-left-radius: {3px};"

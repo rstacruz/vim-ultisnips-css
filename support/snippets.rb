@@ -68,15 +68,6 @@ private
     # Fix placeholders ("{url()}" => "${1:url()}"
     snippet = unplaceholder(snippet)
 
-    # make them into mixins
-    if options['mixin']
-      if format == :sass
-        snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
-      elsif format == :scss
-        snippet.gsub!(/^(.*?): (.*?)$/, "@include \\1(\\2)")
-      end
-    end
-
     # Fix comments
     if slash_comments?(format)
       snippet.gsub!(/\/\* (.*?) \*\/$/, "// \\1")
