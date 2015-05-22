@@ -61,10 +61,17 @@ Reference
 | **bgal** | `background-attachment: local;` |
 | **bgas** | `background-attachment: scroll;` |
 | **bgc** | `background-color: {transparent}` |
-| **bgclip** | `background-clip: padding-box;` |
+| **bgcb** | `background-clip: border-box;` |
+| **bgcc** | `background-clip: content-box;` |
+| **bgclip** | `background-clip: {border-box|padding-box|content-box};` |
+| **bgcp** | `background-clip: padding-box;` |
 | **bgi** | `background-image: {url()}` |
 | **bgp** | `background-position: {x y}` |
 | **bgr** | `background-repeat: {no-repeat}` |
+| **bgs** | `background-size: {auto}` |
+| **bgsa** | `background-size: auto;` |
+| **bgsc** | `background-size: cover;` |
+| **bgst** | `background-size: contain;` |
 | **bl#** | `border-left: {#};` |
 | **bl** | `border-left: {solid 1px #333}` |
 | **blr** | `border-top-left-radius: {!3px}; border-bottom-left-radius: {!3px};` |

@@ -3185,6 +3185,38 @@ snippet bgal "background-attachment: local"
 background-attachment: local;
 endsnippet
 
+snippet bgs "background-size: ___"
+background-size: ${1:auto}
+endsnippet
+
+snippet bgsc "background-size: cover"
+background-size: cover;
+endsnippet
+
+snippet bgst "background-size: contain"
+background-size: contain;
+endsnippet
+
+snippet bgsa "background-size: auto"
+background-size: auto;
+endsnippet
+
+snippet bgclip "background-clip: ___"
+background-clip: ${1:border-box|padding-box|content-box};
+endsnippet
+
+snippet bgcc "background-clip: content-box"
+background-clip: content-box;
+endsnippet
+
+snippet bgcp "background-clip: padding-box"
+background-clip: padding-box;
+endsnippet
+
+snippet bgcb "background-clip: border-box"
+background-clip: border-box;
+endsnippet
+
 snippet f "font: ___"
 font: ${1:italic bold 1em/1.5em serif}
 endsnippet
@@ -4168,10 +4200,6 @@ endsnippet
 
 snippet op "opacity: ___"
 opacity: ${1:0}
-endsnippet
-
-snippet bgclip "background-clip: padding-box"
-background-clip: padding-box;
 endsnippet
 
 snippet us "user-select: ___"

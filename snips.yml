@@ -90,6 +90,16 @@ simple: # Snippets that will expand.
     bgaf: "background-attachment: fixed;"
     bgal: "background-attachment: local;"
 
+    bgs:  "background-size: {auto}"
+    bgsc: "background-size: cover;"
+    bgst: "background-size: contain;"
+    bgsa: "background-size: auto;"
+
+    bgclip: "background-clip: {border-box|padding-box|content-box};"
+    bgcc:   "background-clip: content-box;"
+    bgcp:   "background-clip: padding-box;"
+    bgcb:   "background-clip: border-box;"
+
     f:    "font: {italic bold 1em/1.5em serif}"
     font: "font: {italic bold 1em/1.5em serif}"
 
@@ -293,7 +303,6 @@ css3:
     tf: "transform: {scale(1.0)}"
 
     op: "opacity: {0}"
-    bgclip: "background-clip: padding-box;"
 
     us:  "user-select: {none|text|toggle|element|elements|all}"
     usa: "user-select: all;"
