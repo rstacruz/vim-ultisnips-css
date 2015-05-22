@@ -1,6 +1,6 @@
 require File.expand_path('../support/snippets', __FILE__)
 
-task :default => [:build, :build_markdown]
+task :default => [:build, :update_readme]
 
 task :env do
   require 'yaml'
@@ -18,6 +18,12 @@ task :build => :env do
 end
 
 desc "Builds markdown reference"
-task :build_markdown => :env do
-  puts $snips.to_markdown
+task :update_readme => :env do
+  fn = "README.md"
+  puts fn
+  out = $snips.to_markdown
+
+  readme = File.read(fn)
+  readme.gsub!(/(<!-- reference start -->\n).*(<!-- reference end -->)/m, "\\1#{out}\\2")
+  File.write(fn, readme)
 end

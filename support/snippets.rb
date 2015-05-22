@@ -28,11 +28,15 @@ class Snippets
     out = []
     out << "| Snippet | Description |"
     out << "| ---- | ---- |"
+
+    lines = []
     @snips.each do |name, section|
-      out += section['snippets'].map do |key, val|
+      lines += section['snippets'].map do |key, val|
         %[| **#{key}** | `#{val}` |]
       end
     end
+
+    out += lines.sort
     out.join("\n") + "\n"
   end
 
