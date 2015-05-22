@@ -47,10 +47,10 @@ Reference
 | **@portrait** | `@media (max-width: 480px) /* portrait */` |
 | **@tablet** | `@media (min-width: 769px) /* tablet, desktop */` |
 | **an** | `animation: {name 300ms linear infinite}` |
-| **b** | `border: {solid 1px #333}` |
-| **b0** | `border: 0;` |
+| **b#** | `bottom: {#};` |
+| **b** | `bottom: {0}` |
+| **bb#** | `border-bottom: {#};` |
 | **bb** | `border-bottom: {solid 1px #333}` |
-| **bb0** | `border-bottom: 0;` |
 | **bblr** | `border-bottom-left-radius: {3px}` |
 | **bbr** | `border-bottom-left-radius: {!3px}; border-bottom-right-radius: {!3px};` |
 | **bbrr** | `border-bottom-right-radius: {3px}` |
@@ -65,20 +65,20 @@ Reference
 | **bgi** | `background-image: {url()}` |
 | **bgp** | `background-position: {x y}` |
 | **bgr** | `background-repeat: {no-repeat}` |
+| **bl#** | `border-left: {#};` |
 | **bl** | `border-left: {solid 1px #333}` |
-| **bl0** | `border-left: 0;` |
 | **blr** | `border-top-left-radius: {!3px}; border-bottom-left-radius: {!3px};` |
 | **bold** | `font-weight: bold;` |
+| **br#** | `border-right: {#};` |
 | **br** | `border-right: {solid 1px #333}` |
-| **br0** | `border-right: 0;` |
 | **brad#** | `border-radius: {#};` |
 | **brad** | `border-radius: {3}` |
 | **brr** | `border-top-right-radius: {!3px}; border-bottom-right-radius: {!3px};` |
 | **bs** | `box-shadow: {x y blur spead color}` |
 | **bsb** | `box-sizing: border-box;` |
 | **bsp** | `box-sizing: padding-box;` |
+| **bt#** | `border-top: {#};` |
 | **bt** | `border-top: {solid 1px #333}` |
-| **bt0** | `border-top: 0;` |
 | **btlr** | `border-top-left-radius: {3px}` |
 | **btr** | `border-top-left-radius: {!3px}; border-top-right-radius: {!3px};` |
 | **btrr** | `border-top-right-radius: {3px}` |
@@ -129,27 +129,28 @@ Reference
 | **h** | `height: {0}` |
 | **hlh** | `height: {0px}; line-height: {1.5};` |
 | **italic** | `font-style: italic;` |
+| **l#** | `left: {#};` |
 | **l** | `left: {0}` |
 | **lb** | `left: {0}; bottom: {0};` |
 | **lh** | `line-height: {1.5}` |
 | **ls** | `letter-spacing: {0}` |
 | **lt** | `left: {0}; top: {0};` |
+| **m#** | `margin: {#};` |
 | **m** | `margin: {0}` |
-| **m0** | `margin: 0;` |
 | **m0a** | `margin: 0 auto;` |
 | **m0p0** | `margin: 0; padding: 0;` |
 | **mah** | `max-height: {none}` |
 | **maw** | `max-width: {none}` |
-| **mb#** | `margin-bottom: {#}` |
+| **mb#** | `margin-bottom: {#};` |
 | **mb** | `margin-bottom: {0}` |
 | **mh** | `min-height: {100%}` |
-| **ml#** | `margin-left: {#}` |
+| **ml#** | `margin-left: {#};` |
 | **ml** | `margin-left: {0}` |
 | **moa** | `margin: 0 auto;` |
 | **mopo** | `margin: 0; padding: 0;` |
-| **mr#** | `margin-right: {#}` |
+| **mr#** | `margin-right: {#};` |
 | **mr** | `margin-right: {0}` |
-| **mt#** | `margin-top: {#}` |
+| **mt#** | `margin-top: {#};` |
 | **mt** | `margin-top: {0}` |
 | **mw** | `min-width: {100%}` |
 | **nr** | `no-repeat` |
@@ -164,21 +165,21 @@ Reference
 | **oya** | `overflow-y: auto;` |
 | **oyh** | `overflow-y: hidden;` |
 | **oys** | `overflow-y: scroll;` |
-| **p#** | `padding: {#}` |
+| **p#** | `padding: {#};` |
 | **p** | `padding: {0}` |
-| **p0** | `padding: 0;` |
-| **pb#** | `padding-bottom: {#}` |
+| **pb#** | `padding-bottom: {#};` |
 | **pb** | `padding-bottom: {0}` |
-| **pl#** | `padding-left: {#}` |
+| **pl#** | `padding-left: {#};` |
 | **pl** | `padding-left: {0}` |
 | **poa** | `position: absolute;` |
 | **pof** | `position: fixed;` |
 | **por** | `position: relative;` |
 | **pos** | `position: static;` |
-| **pr#** | `padding-right: {#}` |
+| **pr#** | `padding-right: {#};` |
 | **pr** | `padding-right: {0}` |
-| **pt#** | `padding-top: {#}` |
+| **pt#** | `padding-top: {#};` |
 | **pt** | `padding-top: {0}` |
+| **r#** | `right: {#};` |
 | **r** | `right: {0}` |
 | **ra** | `rgba({0, 0, 0}, {0.5})` |
 | **rb** | `rgba(black, {0.2})` |
@@ -187,6 +188,8 @@ Reference
 | **rw** | `rgba(white, {0.2})` |
 | **rx** | `repeat-x` |
 | **ry** | `repeat-y` |
+| **t#** | `top: {#};` |
+| **t** | `top: {0}` |
 | **ta** | `text-align: {left|right|center|justify}` |
 | **tac** | `text-align: center;` |
 | **taj** | `text-align: justify;` |

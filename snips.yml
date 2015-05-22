@@ -22,9 +22,9 @@ simple: # Snippets that will expand.
     mopo: "margin: 0; padding: 0;"
     m0p0: "margin: 0; padding: 0;"
 
-    m0: "margin: 0;"
-    p0: "padding: 0;"
-    b0: "border: 0;"
+    m#: "margin: {#};"
+    p#: "padding: {#};"
+    b#: "border: {#};"
 
     bs: "box-shadow: {x y blur spead color}"
     brad: "border-radius: {3}"
@@ -72,10 +72,10 @@ simple: # Snippets that will expand.
     bl: "border-left: {solid 1px #333}"
     br: "border-right: {solid 1px #333}"
 
-    bt0: "border-top: 0;"
-    bb0: "border-bottom: 0;"
-    bl0: "border-left: 0;"
-    br0: "border-right: 0;"
+    bt#: "border-top: {#};"
+    bb#: "border-bottom: {#};"
+    bl#: "border-left: {#};"
+    br#: "border-right: {#};"
 
     bcc: "border-collapse: collapse;"
 
@@ -198,6 +198,14 @@ simple: # Snippets that will expand.
 
     l: "left: {0}"
     r: "right: {0}"
+    l#: "left: {#};"
+    r#: "right: {#};"
+
+    t: "top: {0}"
+    b: "bottom: {0}"
+    t#: "top: {#};"
+    b#: "bottom: {#};"
+
     lt: "left: {0}; top: {0};"
     lb: "left: {0}; bottom: {0};"
     rt: "right: {0}; top: {0};"

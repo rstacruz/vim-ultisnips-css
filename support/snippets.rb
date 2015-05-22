@@ -19,8 +19,7 @@ class Snippets
   def common_px_dimensions
     (0..15).to_a +
       (20..90).step(10).to_a +
-      (110..190).step(10).to_a +
-      (200..900).step(50).to_a
+      (200..900).step(100).to_a
   end
 
   def snippets(format)
