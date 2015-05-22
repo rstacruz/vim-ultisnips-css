@@ -20,18 +20,26 @@ class Snippets
   def to_s(format)
     out = []
 
-    out += @snips['simple'].map do |key, val|
-      block \
-        name: key,
-        desc: to_desc(val),
-        snip: to_snippet(val, format)
+    if format == :scss
+      out << 'extend css'
     end
 
-    out += @snips['expressions'].map do |key, val|
-      block \
-        name: key,
-        desc: to_desc(val),
-        snip: unplaceholder(val)
+    unless format == :scss
+      out += @snips['simple'].map do |key, val|
+        block \
+          name: key,
+          desc: to_desc(val),
+          snip: reformat(val, format)
+      end
+    end
+
+    unless format == :scss
+      out += @snips['expressions'].map do |key, val|
+        block \
+          name: key,
+          desc: to_desc(val),
+          snip: unplaceholder(val)
+      end
     end
 
     if format == :sass || format == :scss
@@ -52,46 +60,57 @@ class Snippets
       end
     end
 
-    out += @snips['media'].map do |key, val|
-      block \
-        name: key,
-        desc: val,
-        snip: (brackety?(format) ? val.gsub(') ', ') { ') : val)
+    unless format == :scss
+      out += @snips['media'].map do |key, val|
+        block \
+          name: key,
+          desc: val,
+          snip: (bracketed?(format) ? val.gsub(') ', ') { ') : val)
+      end
     end
 
-    out += @snips['css3'].map do |key, val|
-      block \
-        name: key,
-        desc: to_desc(val),
-        snip: to_snippet(val, format, true)
+    unless format == :scss
+      out += @snips['css3'].map do |key, val|
+        block \
+          name: key,
+          desc: to_desc(val),
+          snip: reformat(val, format, mixin: true)
+      end
     end
 
-
-    out.join("\n\n")
+    out.join("\n\n") + "\n"
   end
 
 private
 
-  def brackety?(format)
-    format == :css || format == :scss
+  # Use brackets?
+  def bracketed?(format)
+    ! indented?(format)
   end
 
+  def indented?(format)
+    format == :sass || format == :stylus
+  end
+
+  # "border: {solid 1px #333}" => "border: ___"
   def to_desc(snippet)
     snippet.gsub(/\{(.*?)\}/, '___')
   end
 
+  # "{url()}" => "${1:url()}
   def unplaceholder(snippet)
     i = 0
     snippet.gsub(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
   end
 
   # Turns a raw snippet into a snippet of a given format
-  def to_snippet(value, format, mixinify=false)
+  # "border-top: 0" => "border-top: 0;"
+  def reformat(value, format, options={})
     snippet = value.dup
 
     snippet.gsub!(/; /, "\n")
     snippet = unplaceholder(snippet)
-    if mixinify
+    if options[:mixin]
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
       elsif format == :scss
@@ -99,15 +118,21 @@ private
       end
     end
 
-    snippet.gsub!(/$/, ';')  if brackety?(format)
+    snippet.gsub!(/$/, ';')  if bracketed?(format)
 
     snippet
   end
 
   # Formats a block
+  #
+  #     block(name: "bt0", desc: "border-top", snip: "border-top: 0")
+  #     # snippet bt0 "border-top"
+  #     # border-top: 0
+  #     # endsnippet
+  #
   def block(options)
     [
-      "snippet #{options[:name]} \"#{options[:desc]}\"",
+      %[snippet #{options[:name]} "#{options[:desc]}"],
       options[:snip],
       "endsnippet"
     ].join("\n")
