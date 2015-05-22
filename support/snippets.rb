@@ -24,6 +24,18 @@ class Snippets
     out.join("\n\n") + "\n"
   end
 
+  def to_markdown
+    out = []
+    out << "| Snippet | Description |"
+    out << "| ---- | ---- |"
+    @snips.each do |name, section|
+      out += section['snippets'].map do |key, val|
+        %[| **#{key}** | `#{val}` |]
+      end
+    end
+    out.join("\n") + "\n"
+  end
+
 private
 
   # Use braces?
@@ -57,7 +69,7 @@ private
   def reformat(value, format, options={})
     snippet = value.dup
 
-    # Line breaks
+    # Line breaks and semicolons.
     if braced?(format)
       snippet.gsub!(/; /, ";\n")
     else

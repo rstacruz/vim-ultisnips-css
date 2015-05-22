@@ -8,10 +8,10 @@
 #
 # Snippets will be transformed accordingly:
 #
-# - For braced languages (css, scss), media queries will start with a `{`.
+# - For braced languages (css, scss), media queries will add a `{` after `)`.
 # - For languages that support slash comments (not css), `/* ... */` will be
 #   turned into `// ...`.
-# - For braced languages (css, scss), statements will end in a `;`
+# - For indented languages (sass, stylus), semicolons will be removed.
 
 simple: # Snippets that will expand.
   formats: [ css, sass, stylus ]
