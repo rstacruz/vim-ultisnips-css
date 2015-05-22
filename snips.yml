@@ -86,6 +86,16 @@ simple: # Snippets that will expand.
     bgc: "background-color: {transparent}"
     bgr: "background-repeat: {no-repeat}"
 
+    bpos: "background-position: {x y}"
+    bp:   "background-position: {x y}"
+
+    brx:  "background-repeat: repeat-x;"
+    bry:  "background-repeat: repeat-y;"
+    bgrx: "background-repeat: repeat-x;"
+    bgry: "background-repeat: repeat-y;"
+    brn:  "background-repeat: no-repeat;"
+    bgrn: "background-repeat: no-repeat;"
+
     bga:  "background-attachment: {scroll|fixed|local}"
     bgas: "background-attachment: scroll;"
     bgaf: "background-attachment: fixed;"

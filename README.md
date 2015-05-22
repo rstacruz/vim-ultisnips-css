@@ -61,7 +61,15 @@ For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
 | **bgclip** | `background-clip: {border-box|padding-box|content-box};` |
 | **bgc** | `background-color: {transparent}` |
 | **bgi** | `background-image: {url()}` |
+| **bpos** | `background-position: {x y}` |
 | **bgp** | `background-position: {x y}` |
+| **bp** | `background-position: {x y}` |
+| **brn** | `background-repeat: no-repeat;` |
+| **bgrn** | `background-repeat: no-repeat;` |
+| **bgrx** | `background-repeat: repeat-x;` |
+| **brx** | `background-repeat: repeat-x;` |
+| **bry** | `background-repeat: repeat-y;` |
+| **bgry** | `background-repeat: repeat-y;` |
 | **bgr** | `background-repeat: {no-repeat}` |
 | **bgsa** | `background-size: auto;` |
 | **bgst** | `background-size: contain;` |
@@ -103,8 +111,8 @@ For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
 | **cuew** | `cursor: ew-resize;` |
 | **cuna** | `cursor: not-allowed;` |
 | **cuns** | `cursor: ns-resize;` |
-| **cp** | `cursor: pointer;` |
 | **cup** | `cursor: pointer;` |
+| **cp** | `cursor: pointer;` |
 | **ct** | `cursor: text;` |
 | **cut** | `cursor: text;` |
 | **cu** | `cursor: {default|pointer|text}` |
@@ -120,20 +128,20 @@ For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
 | **fr** | `float: right;` |
 | **ff** | `font-family: {sans-serif}` |
 | **fs** | `font-size: {1em}` |
-| **italic** | `font-style: italic;` |
 | **fi** | `font-style: italic;` |
+| **italic** | `font-style: italic;` |
 | **fsi** | `font-style: italic;` |
 | **fsn** | `font-style: normal;` |
 | **fw1** | `font-weight: 100;` |
 | **f1** | `font-weight: 100;` |
-| **fw3** | `font-weight: 300;` |
 | **f3** | `font-weight: 300;` |
+| **fw3** | `font-weight: 300;` |
 | **fw4** | `font-weight: 400;` |
 | **f4** | `font-weight: 400;` |
 | **fw5** | `font-weight: 500;` |
 | **f5** | `font-weight: 500;` |
-| **fw7** | `font-weight: 700;` |
 | **f7** | `font-weight: 700;` |
+| **fw7** | `font-weight: 700;` |
 | **fw9** | `font-weight: 900;` |
 | **f9** | `font-weight: 900;` |
 | **bold** | `font-weight: bold;` |
@@ -141,8 +149,8 @@ For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
 | **fwb** | `font-weight: bold;` |
 | **fwn** | `font-weight: normal;` |
 | **fn** | `font-weight: normal;` |
-| **f** | `font: {italic bold 1em/1.5em serif}` |
 | **font** | `font: {italic bold 1em/1.5em serif}` |
+| **f** | `font: {italic bold 1em/1.5em serif}` |
 | **h100** | `height: 100%;` |
 | **h#** | `height: {#};` |
 | **hlh** | `height: {0px}; line-height: {1.5};` |
@@ -163,8 +171,8 @@ For instance, `l#` can be `l0` (left: 0), or `l10` (left: 10), etc
 | **mt** | `margin-top: {0}` |
 | **m0a** | `margin: 0 auto;` |
 | **moa** | `margin: 0 auto;` |
-| **mopo** | `margin: 0; padding: 0;` |
 | **m0p0** | `margin: 0; padding: 0;` |
+| **mopo** | `margin: 0; padding: 0;` |
 | **m#** | `margin: {#};` |
 | **m** | `margin: {0}` |
 | **mah** | `max-height: {none}` |
