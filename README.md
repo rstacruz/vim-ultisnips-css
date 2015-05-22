@@ -115,6 +115,12 @@ Reference
 | **dtc** | `display: table-cell;` |
 | **dtr** | `display: table-row;` |
 | **f** | `font: {italic bold 1em/1.5em serif}` |
+| **f1** | `font-weight: 100;` |
+| **f3** | `font-weight: 300;` |
+| **f4** | `font-weight: 400;` |
+| **f5** | `font-weight: 500;` |
+| **f7** | `font-weight: 700;` |
+| **f9** | `font-weight: 900;` |
 | **fb** | `font-weight: bold;` |
 | **ff** | `font-family: {sans-serif}` |
 | **fi** | `font-style: italic;` |

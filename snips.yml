@@ -149,12 +149,20 @@ simple: # Snippets that will expand.
     fwn:  "font-weight: normal;"
     fwb:  "font-weight: bold;"
     bold: "font-weight: bold;"
+
     fw1:  "font-weight: 100;"
     fw3:  "font-weight: 300;"
     fw4:  "font-weight: 400;"
     fw5:  "font-weight: 500;"
     fw7:  "font-weight: 700;"
     fw9:  "font-weight: 900;"
+
+    f1:  "font-weight: 100;"
+    f3:  "font-weight: 300;"
+    f4:  "font-weight: 400;"
+    f5:  "font-weight: 500;"
+    f7:  "font-weight: 700;"
+    f9:  "font-weight: 900;"
 
     fi:   "font-style: italic;"
     fn:   "font-weight: normal;"
