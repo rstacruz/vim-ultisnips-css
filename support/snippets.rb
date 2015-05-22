@@ -24,7 +24,7 @@ class Snippets
         block \
           name: key,
           desc: to_desc(val),
-          snip: unplaceholder(val)
+          snip: reformat(val, format, expression: true)
       end
     end
 
@@ -33,7 +33,7 @@ class Snippets
         block \
           name: key,
           desc: to_desc(val),
-          snip: unplaceholder(val)
+          snip: reformat(val, format, expression: true)
       end
     end
 
@@ -42,7 +42,7 @@ class Snippets
         block \
           name: key,
           desc: to_desc(val),
-          snip: unplaceholder(val)
+          snip: reformat(val, format, expression: true)
       end
     end
 
@@ -51,7 +51,7 @@ class Snippets
         block \
           name: key,
           desc: to_desc(val),
-          snip: (bracketed?(format) ? val.gsub(') ', ') { ') : val)
+          snip: reformat(val, format, media: true, expression: true)
       end
     end
 
@@ -83,7 +83,7 @@ private
     snippet.gsub(/\{(.*?)\}/, '___')
   end
 
-  # "{url()}" => "${1:url()}
+  # "{url()}" => "${1:url()}"
   def unplaceholder(snippet)
     i = 0
     snippet.gsub(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
@@ -94,8 +94,13 @@ private
   def reformat(value, format, options={})
     snippet = value.dup
 
+    # Line breaks
     snippet.gsub!(/; /, "\n")
+
+    # Fix placeholders ("{url()}" => "${1:url()}"
     snippet = unplaceholder(snippet)
+
+    # Fix mixins
     if options[:mixin]
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
@@ -104,7 +109,13 @@ private
       end
     end
 
-    snippet.gsub!(/$/, ';')  if bracketed?(format)
+    # Media queries: add a starting bracket if needed
+    if options[:media]
+      snippet.gsub!(') ', ') { ') if bracketed?(format)
+    end
+
+    # Add a semicolon at the end. Skip it for non-statements
+    snippet.gsub!(/$/, ';')  if bracketed?(format) && !options[:expression]
 
     snippet
   end
