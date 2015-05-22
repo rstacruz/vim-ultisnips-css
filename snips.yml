@@ -173,32 +173,6 @@ simple: # Snippets that will expand.
     tla: "table-layout: auto"
 
 # ----------------------------------------------------------------------------
-media: # Presets for media queries
-
-  #                           xs         sm              md             lg
-  #                   480         768          992                1200
-  #              '     '     '     '     '     '     '     '     '     '     '
-  #                    '           '           '                 '
-  # portrait    <------^           '           '                 '
-  # phone       <------------------^           '                 '
-  # mobile      <------------------------------^                 '
-  # nondesktop  <------------------------------------------------^
-  # tablet                         ^---------------------------------------->
-  # laptop                                     ^---------------------------->
-  # desktop                                                      ^---------->
-
-  formats: [ css, sass, stylus ]
-  options: { media: true, expression: true }
-  snippets:
-    "@portrait":   "@media (max-width: 480px) /* portrait */"
-    "@phone":      "@media (max-width: 768px) /* phone */"
-    "@mobile":     "@media (max-width: 992px) /* mobile */"
-    "@nondesktop": "@media (max-width: 1200px) /* phone, tablet, laptop */"
-    "@tablet":     "@media (min-width: 769px) /* tablet, desktop */"
-    "@laptop":     "@media (min-width: 993px) /* laptop */"
-    "@desktop":    "@media (min-width: 1201px) /* desktop */"
-
-# ----------------------------------------------------------------------------
 expressions: # Things that are not properties
 
   formats: [ css, sass, stylus ]
@@ -230,10 +204,36 @@ stylus-expressions: # Stylus-specific expressions
     cf: "clearfix()"
 
 # ----------------------------------------------------------------------------
+media: # Presets for media queries
+
+  #                           xs         sm              md             lg
+  #                   480         768          992                1200
+  #              '     '     '     '     '     '     '     '     '     '     '
+  #                    '           '           '                 '
+  # portrait    <------^           '           '                 '
+  # phone       <------------------^           '                 '
+  # mobile      <------------------------------^                 '
+  # nondesktop  <------------------------------------------------^
+  # tablet                         ^---------------------------------------->
+  # laptop                                     ^---------------------------->
+  # desktop                                                      ^---------->
+
+  formats: [ css, sass, stylus ]
+  options: { media: true, expression: true }
+  snippets:
+    "@portrait":   "@media (max-width: 480px) /* portrait */"
+    "@phone":      "@media (max-width: 768px) /* phone */"
+    "@mobile":     "@media (max-width: 992px) /* mobile */"
+    "@nondesktop": "@media (max-width: 1200px) /* phone, tablet, laptop */"
+    "@tablet":     "@media (min-width: 769px) /* tablet, desktop */"
+    "@laptop":     "@media (min-width: 993px) /* laptop */"
+    "@desktop":    "@media (min-width: 1201px) /* desktop */"
+
+# ----------------------------------------------------------------------------
 css3:
 
   formats: [ css, sass, stylus ]
-  options: {}
+  options: { mixin: true }
   snippets:
     btrad:  "border-top-radius: {3px}"
     btlrad: "border-top-left-radius: {3px}"

@@ -10,40 +10,18 @@ class Snippets
       out << 'extend css'
     end
 
-    unless format == :scss
-      out += work('simple', format)
-    end
-
-    unless format == :scss
-      out += work('expressions', format, expression: true)
-    end
-
-    if format == :sass || format == :scss
-      out += work('sass-expressions', format, expression: true)
-    end
-
-    if format == :stylus
-      out += work('stylus-expressions', format, expression: true)
-    end
-
-    unless format == :scss
-      out += work('media', format, media: true, expression: true)
-    end
-
-    unless format == :scss
-      out += work('css3', format, mixin: true)
+    @snips.each do |name, section|
+      if section['formats'].include?(format.to_s)
+        out += section['snippets'].map do |key, val|
+          block \
+            name: key,
+            desc: to_desc(val),
+            snip: reformat(val, format, section['options'] || {})
+        end
+      end
     end
 
     out.join("\n\n") + "\n"
-  end
-
-  def work(section, format, options = {})
-    @snips[section]['snippets'].map do |key, val|
-      block \
-        name: key, \
-        desc: to_desc(val), \
-        snip: reformat(val, format, options)
-    end
   end
 
 private
@@ -80,7 +58,7 @@ private
     snippet = unplaceholder(snippet)
 
     # Fix mixins
-    if options[:mixin]
+    if options['mixin']
       if format == :sass
         snippet.gsub!(/^(.*?): (.*?)$/, "+\\1(\\2)")
       elsif format == :scss
@@ -89,12 +67,12 @@ private
     end
 
     # Media queries: add a starting bracket if needed
-    if options[:media]
+    if options['media']
       snippet.gsub!(') ', ') { ') if bracketed?(format)
     end
 
     # Add a semicolon at the end. Skip it for non-statements
-    snippet.gsub!(/$/, ';')  if bracketed?(format) && !options[:expression]
+    snippet.gsub!(/$/, ';')  if bracketed?(format) && !options['expression']
 
     snippet
   end
