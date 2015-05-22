@@ -141,6 +141,10 @@ snippet br0 "border-right: 0"
 border-right: 0;
 endsnippet
 
+snippet bcc "border-collapse: collapse"
+border-collapse: collapse;
+endsnippet
+
 snippet bg "background: ___"
 background: ${1:#fff url(image.png) no-repeat left top fixed};
 endsnippet
@@ -338,6 +342,10 @@ snippet fw3 "font-weight: 300"
 font-weight: 300;
 endsnippet
 
+snippet fw4 "font-weight: 400"
+font-weight: 400;
+endsnippet
+
 snippet fw5 "font-weight: 500"
 font-weight: 500;
 endsnippet
@@ -380,10 +388,6 @@ endsnippet
 
 snippet vv "visibility: visible"
 visibility: visible;
-endsnippet
-
-snippet bcc "border-collapse: collapse"
-border-collapse: collapse;
 endsnippet
 
 snippet tt "text-transform: ___"
@@ -590,27 +594,39 @@ snippet @desktop "@media (min-width: 1201px) /* desktop */"
 @media (min-width: 1201px) { /* desktop */
 endsnippet
 
-snippet btrad "border-top-radius: ___"
-border-top-radius: ${1:3px};
-endsnippet
-
-snippet btlrad "border-top-left-radius: ___"
+snippet btlr "border-top-left-radius: ___"
 border-top-left-radius: ${1:3px};
 endsnippet
 
-snippet btrrad "border-top-right-radius: ___"
+snippet btrr "border-top-right-radius: ___"
 border-top-right-radius: ${1:3px};
 endsnippet
 
-snippet bbrad "border-bottom-radius: ___"
-border-bottom-radius: ${1:3px};
-endsnippet
-
-snippet bblrad "border-bottom-left-radius: ___"
+snippet bblr "border-bottom-left-radius: ___"
 border-bottom-left-radius: ${1:3px};
 endsnippet
 
-snippet bbrrad "border-bottom-right-radius: ___"
+snippet bbrr "border-bottom-right-radius: ___"
+border-bottom-right-radius: ${1:3px};
+endsnippet
+
+snippet btr "border-top-left-radius: ___; border-top-right-radius: ___"
+border-top-left-radius: ${1:3px};
+border-top-right-radius: ${1:3px};
+endsnippet
+
+snippet bbr "border-bottom-left-radius: ___; border-bottom-right-radius: ___"
+border-bottom-left-radius: ${1:3px};
+border-bottom-right-radius: ${1:3px};
+endsnippet
+
+snippet blr "border-top-left-radius: ___; border-bottom-left-radius: ___"
+border-top-left-radius: ${1:3px};
+border-bottom-left-radius: ${1:3px};
+endsnippet
+
+snippet brr "border-top-right-radius: ___; border-bottom-right-radius: ___"
+border-top-right-radius: ${1:3px};
 border-bottom-right-radius: ${1:3px};
 endsnippet
 

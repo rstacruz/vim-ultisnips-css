@@ -51,9 +51,9 @@ Reference
 | **b0** | `border: 0;` |
 | **bb** | `border-bottom: {solid 1px #333};` |
 | **bb0** | `border-bottom: 0;` |
-| **bblrad** | `border-bottom-left-radius: {3px};` |
-| **bbrad** | `border-bottom-radius: {3px};` |
-| **bbrrad** | `border-bottom-right-radius: {3px};` |
+| **bblr** | `border-bottom-left-radius: {3px};` |
+| **bbr** | `border-bottom-left-radius: {!3px}; border-bottom-right-radius: {!3px};` |
+| **bbrr** | `border-bottom-right-radius: {3px};` |
 | **bcc** | `border-collapse: collapse;` |
 | **bg** | `background: {#fff url(image.png) no-repeat left top fixed};` |
 | **bga** | `background-attachment: {scroll|fixed|local};` |
@@ -67,18 +67,20 @@ Reference
 | **bgr** | `background-repeat: {no-repeat};` |
 | **bl** | `border-left: {solid 1px #333};` |
 | **bl0** | `border-left: 0;` |
+| **blr** | `border-top-left-radius: {!3px}; border-bottom-left-radius: {!3px};` |
 | **bold** | `font-weight: bold;` |
 | **br** | `border-right: {solid 1px #333};` |
 | **br0** | `border-right: 0;` |
 | **brad** | `border-radius: {3px};` |
+| **brr** | `border-top-right-radius: {!3px}; border-bottom-right-radius: {!3px};` |
 | **bs** | `box-shadow: {0 1px 2px #fff};` |
 | **bsb** | `box-sizing: border-box;` |
 | **bsp** | `box-sizing: padding-box;` |
 | **bt** | `border-top: {solid 1px #333};` |
 | **bt0** | `border-top: 0;` |
-| **btlrad** | `border-top-left-radius: {3px};` |
-| **btrad** | `border-top-radius: {3px};` |
-| **btrrad** | `border-top-right-radius: {3px};` |
+| **btlr** | `border-top-left-radius: {3px};` |
+| **btr** | `border-top-left-radius: {!3px}; border-top-right-radius: {!3px};` |
+| **btrr** | `border-top-right-radius: {3px};` |
 | **cb** | `clear: both;` |
 | **cd** | `cursor: default;` |
 | **cf** | `+clearfix` |
@@ -114,6 +116,7 @@ Reference
 | **fsn** | `font-style: normal;` |
 | **fw1** | `font-weight: 100;` |
 | **fw3** | `font-weight: 300;` |
+| **fw4** | `font-weight: 400;` |
 | **fw5** | `font-weight: 500;` |
 | **fw7** | `font-weight: 700;` |
 | **fw9** | `font-weight: 900;` |

@@ -6,10 +6,6 @@ class Snippets
   def to_s(format)
     out = []
 
-    if format == :scss
-      out << 'extend css'
-    end
-
     @snips.each do |name, section|
       if section['formats'].include?(format.to_s)
         out += section['snippets'].map do |key, val|
@@ -65,7 +61,14 @@ private
   # "{url()}" => "${1:url()}"
   def unplaceholder(snippet)
     i = 0
-    snippet.gsub(/\{(.*?)\}/) { |placeholder| "${#{i += 1}:#{placeholder[1...-1]}}" }
+    snippet.gsub(/\{(.*?)\}/) { |placeholder,x|
+      if placeholder =~ /^\{!/
+        i = 1
+        "${1:#{placeholder[2...-1]}}"
+      else
+        "${#{i += 1}:#{placeholder[1...-1]}}"
+      end
+    }
   end
 
   # Turns a raw snippet into a snippet of a given format

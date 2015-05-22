@@ -60,6 +60,8 @@ simple: # Snippets that will expand.
     bl0: "border-left: 0;"
     br0: "border-right: 0;"
 
+    bcc: "border-collapse: collapse;"
+
     bg: "background: {#fff url(image.png) no-repeat left top fixed};"
     bgp: "background-position: {x y};"
     bgi: "background-image: {url()};"
@@ -120,6 +122,7 @@ simple: # Snippets that will expand.
     bold: "font-weight: bold;"
     fw1:  "font-weight: 100;"
     fw3:  "font-weight: 300;"
+    fw4:  "font-weight: 400;"
     fw5:  "font-weight: 500;"
     fw7:  "font-weight: 700;"
     fw9:  "font-weight: 900;"
@@ -133,8 +136,6 @@ simple: # Snippets that will expand.
     v: "visibility: {visible|hidden|collapse};"
     vh: "visibility: hidden;"
     vv: "visibility: visible;"
-
-    bcc: "border-collapse: collapse;"
 
     tt:  "text-transform: {capitalize|uppercase|lowercase};"
     ttu: "text-transform: uppercase;"
@@ -246,12 +247,15 @@ css3:
 
   formats: [ css, sass, stylus ]
   snippets:
-    btrad:  "border-top-radius: {3px};"
-    btlrad: "border-top-left-radius: {3px};"
-    btrrad: "border-top-right-radius: {3px};"
-    bbrad:  "border-bottom-radius: {3px};"
-    bblrad: "border-bottom-left-radius: {3px};"
-    bbrrad: "border-bottom-right-radius: {3px};"
+    btlr: "border-top-left-radius: {3px};"
+    btrr: "border-top-right-radius: {3px};"
+    bblr: "border-bottom-left-radius: {3px};"
+    bbrr: "border-bottom-right-radius: {3px};"
+
+    btr:  "border-top-left-radius: {!3px}; border-top-right-radius: {!3px};"
+    bbr:  "border-bottom-left-radius: {!3px}; border-bottom-right-radius: {!3px};"
+    blr:  "border-top-left-radius: {!3px}; border-bottom-left-radius: {!3px};"
+    brr:  "border-top-right-radius: {!3px}; border-bottom-right-radius: {!3px};"
 
     bsb: "box-sizing: border-box;"
     bsp: "box-sizing: padding-box;"
