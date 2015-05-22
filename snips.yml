@@ -177,11 +177,13 @@ simple: # Snippets that will expand.
 media: # Presets for media queries
 # ----------------------------------------------------------------------------
 
-  "@big":     "@media (min-width: 1180px) // big desktop"
-  "@desktop": "@media (min-width: 769px) // desktop"
-  "@tablet":  "@media (min-width: 481px) // tablet & desktop"
-  "@otablet": "@media (min-width: 481px) and (max-width: 768px) // tablet"
-  "@mobile":  "@media (max-width: 480px) // mobile"
+  "@portrait":   "@media (max-width: 480px) // portrait"
+  "@phone":      "@media (max-width: 768px) // phone"
+  "@mobile":     "@media (max-width: 992px) // mobile"
+  "@nondesktop": "@media (max-width: 1200px) // non-desktop"
+  "@tablet":     "@media (min-width: 769px) // tablet & desktop"
+  "@laptop":     "@media (min-width: 993px) // laptop"
+  "@desktop":    "@media (min-width: 1201px) // desktop"
 
 # ----------------------------------------------------------------------------
 expressions: # Things that are not properties

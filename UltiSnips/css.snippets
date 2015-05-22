@@ -562,24 +562,32 @@ snippet ra "rgba(___, ___)"
 rgba(${1:0, 0, 0}, ${2:0.5})
 endsnippet
 
-snippet @big "@media (min-width: 1180px) // big desktop"
-@media (min-width: 1180px) { // big desktop
+snippet @portrait "@media (max-width: 480px) // portrait"
+@media (max-width: 480px) { // portrait
 endsnippet
 
-snippet @desktop "@media (min-width: 769px) // desktop"
-@media (min-width: 769px) { // desktop
+snippet @phone "@media (max-width: 768px) // phone"
+@media (max-width: 768px) { // phone
 endsnippet
 
-snippet @tablet "@media (min-width: 481px) // tablet & desktop"
-@media (min-width: 481px) { // tablet & desktop
+snippet @mobile "@media (max-width: 992px) // mobile"
+@media (max-width: 992px) { // mobile
 endsnippet
 
-snippet @otablet "@media (min-width: 481px) and (max-width: 768px) // tablet"
-@media (min-width: 481px) { and (max-width: 768px) { // tablet
+snippet @nondesktop "@media (max-width: 1200px) // non-desktop"
+@media (max-width: 1200px) { // non-desktop
 endsnippet
 
-snippet @mobile "@media (max-width: 480px) // mobile"
-@media (max-width: 480px) { // mobile
+snippet @tablet "@media (min-width: 769px) // tablet & desktop"
+@media (min-width: 769px) { // tablet & desktop
+endsnippet
+
+snippet @laptop "@media (min-width: 993px) // laptop"
+@media (min-width: 993px) { // laptop
+endsnippet
+
+snippet @desktop "@media (min-width: 1201px) // desktop"
+@media (min-width: 1201px) { // desktop
 endsnippet
 
 snippet btrad "border-top-radius: ___"
