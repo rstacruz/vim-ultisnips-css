@@ -1,9 +1,9 @@
 # CSS snippets for UltiSnips.vim
 Style faster.
 
-**DEPRECATED:** [vim-css-shorthand] is a much better implementation of this idea.
+**DEPRECATED:** [vim-hyperstyle] is a new and better implementation of this idea.
 
-[vim-css-shorthand]: https://github.com/rstacruz/vim-css-shorthand/
+[vim-hyperstyle]: http://ricostacruz.com/vim-hyperstyle/
 
 My collection of CSS snippets lets you type CSS faster. Just use these on a
 Vim+UltiSnips setup and you can type *abbreviations* of declarations to expand
